@@ -35,7 +35,7 @@
    ==========================*/
 
   $('.slide-1 ').slick({
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2500,
   });
   $('.slide-1-section').slick({
@@ -1454,6 +1454,17 @@ $('.feature-slide').slick({
     });
   });
 
+  $(function() {
+    $('#main-menu-header').smartmenus({
+      subMenusSubOffsetX: 1,
+      subMenusSubOffsetY: -8
+    });
+    $('#sub-menu').smartmenus({
+      subMenusSubOffsetX: 1,
+      subMenusSubOffsetY: -8
+    });
+  });
+
   /*=====================
    08. Product page
    ==========================*/
@@ -2537,34 +2548,6 @@ $('.feature-slide').slick({
     ]
   });
 
-
-  /*=====================
-   14. RTL & Dark Light
-   ==========================*/
-
-  $('<div class="theme-pannel-main"><ul><li id="rtl_btn"><a href="javascript:void(0)" class="btn setting_btn"><span class="rtl-txt">Rtl</span></a></li><li id="ltr_btn"><a href="javascript:void(0)" class="btn setting_btn"><span class="rtl-txt">Ltr</span></a></li><li class="sidebar-btn dark-light-btn"><a href="javascript:void(0)" class="dark-light"><span class="theme-layout-version">Dark</span></a></li></ul></div><div class="color-picker"> <a href="#" class="handle title"> <img src="../assets/images/paint.png"/> </a> <div> <h4>Choose color</h4> <ul class="colors"> <li class="color1"></li><li class="color2"></li><li class="color3"></li><li class="color4"></li><li class="color5"></li><li class="color6"></li><li class="color7"></li><li class="color8"></li><li class="color9"></li><li class="color10"></li><li class="color11"></li><li class="color12"></li><li class="color13"></li><li class="color14"></li><li class="color15"></li></ul> </div></div>').appendTo($('body'));
-  (function() {
-  })();
-  $('#ltr_btn').hide();
-  $("#ltr_btn").on('click', function (){
-    $('body').addClass('ltr');
-    $('body').removeClass('rtl');
-    $('#ltr_btn').hide();
-    $('#rtl_btn').show();
-  });
-  $("#rtl_btn").on('click', function (){
-    $('body').addClass('rtl');
-    $('body').removeClass('ltr');
-    $('#rtl_btn').hide();
-    $('#ltr_btn').show();
-  });
-  $(".setting_buttons li").on('click', function (){
-    $(this).addClass('active').siblings().removeClass('active');
-  });
-  $(".color-picker li").on('click', function (){
-    $(this).addClass('active').siblings().removeClass('active');
-  });
-
 // dark layout //
   var body_event = $("body");
   body_event.on("click", ".theme-layout-version" , function(){
@@ -2723,89 +2706,6 @@ $('.tap-top').on('click', function() {
       $('.bottom-cart-sticky').addClass('open-cart');
     } else {
       $('.bottom-cart-sticky').removeClass('open-cart');
-    }
-  });
-
-
-
-
-
-  /*=====================
-  20. Color Picker
-   ==========================*/
-  var body_event = $("body");
-  body_event.on("click", ".color1", function() {
-    $("#color" ).attr("href", "../assets/css/color1.css" );
-    return false;
-
-  });
-  body_event.on("click", ".color2", function() {
-    $("#color" ).attr("href", "../assets/css/color2.css" );
-    return false;
-  });
-  body_event.on("click", ".color3", function() {
-    $("#color" ).attr("href", "../assets/css/color3.css" );
-    return false;
-  });
-  body_event.on("click", ".color4", function() {
-    $("#color" ).attr("href", "../assets/css/color4.css" );
-    return false;
-  });
-  body_event.on("click", ".color5", function() {
-    $("#color" ).attr("href", "../assets/css/color5.css" );
-    return false;
-  });
-  body_event.on("click", ".color6", function() {
-    $("#color" ).attr("href", "../assets/css/color6.css" );
-    return false;
-  });
-  body_event.on("click", ".color7", function() {
-    $("#color" ).attr("href", "../assets/css/color7.css" );
-    return false;
-  });
-  body_event.on("click", ".color8", function() {
-    $("#color" ).attr("href", "../assets/css/color8.css" );
-    return false;
-  });
-  body_event.on("click", ".color9", function() {
-    $("#color" ).attr("href", "../assets/css/color9.css" );
-    return false;
-  });
-  body_event.on("click", ".color10", function() {
-    $("#color" ).attr("href", "../assets/css/color10.css" );
-    return false;
-  });
-  body_event.on("click", ".color11", function() {
-    $("#color" ).attr("href", "../assets/css/color11.css" );
-    return false;
-  });
-  body_event.on("click", ".color12", function() {
-    $("#color" ).attr("href", "../assets/css/color12.css" );
-    return false;
-  });
-  body_event.on("click", ".color13", function() {
-    $("#color" ).attr("href", "../assets/css/color13.css" );
-    return false;
-  });
-  body_event.on("click", ".color14", function() {
-    $("#color" ).attr("href", "../assets/css/color14.css" );
-    return false;
-  });
-  body_event.on("click", ".color15", function() {
-    $("#color" ).attr("href", "../assets/css/color15.css" );
-    return false;
-  });
-
-  $('.color-picker').animate({right: '-150px'});
-
-  body_event.on("click", ".color-picker a.handle", function(e) {
-    e.preventDefault();
-    var div = $('.color-picker');
-    if (div.css('right') === '-150px') {
-      $('.color-picker').animate({right: '0px'});
-    }
-    else {
-      $('.color-picker').animate({right: '-150px'});
     }
   });
 
