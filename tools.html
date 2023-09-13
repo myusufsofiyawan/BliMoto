@@ -76,16 +76,14 @@
       rel="stylesheet"
     />
 
-
-
-        <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
-
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"
+    />
 
     <!-- css custom agung -->
-    <link rel="stylesheet" type="text/css" href="custom.css">
-
-    
+    <link rel="stylesheet" type="text/css" href="custom.css" />
   </head>
   <body class="bg-light">
     <!-- loader start -->
@@ -97,16 +95,19 @@
     <!-- loader end -->
 
     <!--header start-->
-    <header id="stickyheader" class="header-style2">
+    <header id="stickyheader" class="header-style2 sticky">
       <div class="header7">
         <div class="custom-container">
           <div class="row">
             <div class="col-12">
               <div class="header-contain">
                 <div class="logo-block">
-                  <div class="mobilecat-toggle">
-                    <i class="fa fa-bars sidebar-bar"></i>
+                  <div
+                    class="mobilecat-toggle mobile-search icon-md-block d-sm-none"
+                  >
+                    <i class="fa fa-search"></i>
                   </div>
+
                   <div class="brand-logo logo-sm-center">
                     <a href="index.html">
                       <img
@@ -180,11 +181,7 @@
                 </svg>
               </span>
             </div>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="search your product"
-            />
+            <input type="text" class="form-control" placeholder="Cari Motor" />
             <div class="input-group-append">
               <span class="input-group-text close-searchbar">
                 <svg
@@ -205,6 +202,29 @@
           <div class="row">
             <div class="col-12">
               <div class="category-contain">
+                <div class="category-left">
+                  <div class="header-category3">
+                    <div class="category-heandle open">
+                      <div class="heandle-right">
+                        <div class="point"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="logo-block">
+                    <div class="mobilecat-toggle mobile-search icon-md-block">
+                      <i class="fa fa-search"></i>
+                    </div>
+                    <div class="brand-logo logo-sm-center">
+                      <a href="index.html ">
+                        <img
+                          src="../assets/images/logo/Logo-blimoto.webp"
+                          class="img-fluid"
+                          alt="logo"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <div class="category-right mx-auto">
                   <div class="menu-block">
                     <nav id="main-nav">
@@ -304,12 +324,55 @@
                     </nav>
                   </div>
                 </div>
+                <div class="icon-block">
+                  <div class="toggle-nav">
+                    <i class="fa fa-bars sidebar-bar"></i>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="searchbar-input ajax-search the-basics">
+          <div class="input-group">
+            <span class="input-group-text">
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="28.931px"
+                height="28.932px"
+                viewBox="0 0 28.931 28.932"
+                style="enable-background: new 0 0 28.931 28.932"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M28.344,25.518l-6.114-6.115c1.486-2.067,2.303-4.537,2.303-7.137c0-3.275-1.275-6.355-3.594-8.672C18.625,1.278,15.543,0,12.266,0C8.99,0,5.909,1.275,3.593,3.594C1.277,5.909,0.001,8.99,0.001,12.266c0,3.276,1.275,6.356,3.592,8.674c2.316,2.316,5.396,3.594,8.673,3.594c2.599,0,5.067-0.813,7.136-2.303l6.114,6.115c0.392,0.391,0.902,0.586,1.414,0.586c0.513,0,1.024-0.195,1.414-0.586C29.125,27.564,29.125,26.299,28.344,25.518z M6.422,18.111c-1.562-1.562-2.421-3.639-2.421-5.846S4.86,7.983,6.422,6.421c1.561-1.562,3.636-2.422,5.844-2.422s4.284,0.86,5.845,2.422c1.562,1.562,2.422,3.638,2.422,5.845s-0.859,4.283-2.422,5.846c-1.562,1.562-3.636,2.42-5.845,2.42S7.981,19.672,6.422,18.111z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <input
+              type="search"
+              class="form-control typeahead"
+              placeholder="Search a Product"
+            />
+            <span class="input-group-text close-searchbar">
+              <svg
+                viewBox="0 0 329.26933 329"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
       </div>
-    </header>
     </header>
     <!--header end-->
 
@@ -521,16 +584,15 @@
     <!--home slider end-->
 
     <!-- simulasi kredit start -->
-    <section >
+    <section>
       <div class="custom-container">
         <div class="row d-flex justify-content-center">
           <div
             style="margin-top: -4rem"
             class="col-11 col-md-10 px-3 py-3 card rounded-3"
           >
+            <h3 class="text-center mb-3">Simulasi Kredit</h3>
 
-          <h3 class="text-center mb-3">Simulasi Kredit</h3>
-          
             <h4 class="text-black">Temukan kendaraan impianmu !</h4>
             <p class="mt-2">
               Kami telah membantu lebih dari 2000 orang untuk menemukan
@@ -540,25 +602,31 @@
             <form id="form-simulasi" action="" class="mt-2">
               <div class="row">
                 <!-- kota -->
-                <div class="col-12 col-md-3 ">
+                <div class="col-12 col-md-3">
                   <div class="form-group">
-                    <label for="SelectKota" class="mb-0" style="font-size: 12px">Kota</label>
-                    <select id="kotaSelect" class="js-example-basic-single form-select form-select-sm" style="width: 100%;"
+                    <label for="SelectKota" class="mb-0" style="font-size: 12px"
+                      >Kota</label
+                    >
+                    <select
+                      id="kotaSelect"
+                      class="js-example-basic-single form-select form-select-sm"
+                      style="width: 100%"
                       name="kota"
                     >
-                    <option value="" style="width: 100%;"></option>
+                      <option value="" style="width: 100%"></option>
                     </select>
                   </div>
                 </div>
 
                 <!-- merk -->
-                <div class="col-12 col-md-3 ">
+                <div class="col-12 col-md-3">
                   <div class="form-group">
                     <label for="SelectKota" class="mb-0" style="font-size: 12px"
                       >merk</label
                     >
                     <select
-                      class="js-example-basic-single form-select form-select-sm" style="width: 100%;"
+                      class="js-example-basic-single form-select form-select-sm"
+                      style="width: 100%"
                       name="merk"
                     >
                       <option value="AL">Alabama</option>
@@ -572,13 +640,14 @@
                 </div>
 
                 <!-- Tipe -->
-                <div class="col-12 col-md-3 ">
+                <div class="col-12 col-md-3">
                   <div class="form-group">
                     <label for="SelectKota" class="mb-0" style="font-size: 12px"
                       >Tipe</label
                     >
                     <select
-                      class="js-example-basic-single form-select form-select-sm" style="width: 100%;"
+                      class="js-example-basic-single form-select form-select-sm"
+                      style="width: 100%"
                       name="tipe"
                     >
                       <option value="AL">Alabama</option>
@@ -592,13 +661,14 @@
                 </div>
 
                 <!-- pembayaran -->
-                <div class="col-12 col-md-3 ">
+                <div class="col-12 col-md-3">
                   <div class="form-group">
                     <label for="SelectKota" class="mb-0" style="font-size: 12px"
                       >Pembayaran</label
                     >
                     <select
-                      class="js-example-basic-single form-select form-select-sm" style="width: 100%;"
+                      class="js-example-basic-single form-select form-select-sm"
+                      style="width: 100%"
                       name="pembayaran"
                     >
                       <option value="AL">Alabama</option>
@@ -612,15 +682,16 @@
                 </div>
               </div>
               <!-- baris 2 -->
-              <div class="row"> 
+              <div class="row">
                 <!-- tenor -->
-                <div class="col-12 col-md-3 ">
+                <div class="col-12 col-md-3">
                   <div class="form-group">
                     <label for="SelectKota" class="mb-0" style="font-size: 12px"
                       >Tenor</label
                     >
                     <select
-                      class="js-example-basic-single form-select form-select-sm" style="width: 100%;"
+                      class="js-example-basic-single form-select form-select-sm"
+                      style="width: 100%"
                       name="tenor"
                     >
                       <option value="AL">Alabama</option>
@@ -647,10 +718,16 @@
 
                 <div class="col-md-6 range-wrap">
                   <label for="dp" class="form-label">DP</label>
-                  <input type="range" min="100000" max="1000000" class="form-range range" step="50000" oninput="updateBubble(this)" />
+                  <input
+                    type="range"
+                    min="100000"
+                    max="1000000"
+                    class="form-range range"
+                    step="50000"
+                    oninput="updateBubble(this)"
+                  />
                   <output id="bubble" class="bubble">Rp 100,000</output>
                 </div>
-
 
                 <!-- <div class="double-slider-box">
                   <h3 class="range-title">DP / Angsuran</h3>
@@ -669,314 +746,7 @@
     </section>
     <!-- simulasi kredit end -->
 
-    <!-- best motor -->
-    <div class="list-product">
-      <div class="tab-content">
-        <div class="tab-pane fade">
-          
-        </div>
-      </div>
-    </div>
-    <!-- best motor end -->
-
-
-    <!-- title start -->
-    <div class="title8 section-big-pt-space" >
-      <h4>trending category</h4>
-    </div>
-    <!-- title start -->
-
-    <!-- category start -->
-    <section class="category3 section-big-pb-space">
-      <div class="custom-container">
-        <div class="row category-block">
-          <div class="col-12 pr-0">
-            <div class="category-slide5 no-arrow mb--5">
-              <div>
-                <div class="category-box">
-                  <div class="img-wrraper">
-                    <a href="product-page(left-sidebar).html">
-                      <img
-                        src="../assets/images/tools/category/1.jpg"
-                        alt="category"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="category-detail">
-                      <h4>automotive</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="category-box">
-                  <div class="img-wrraper">
-                    <a href="product-page(left-sidebar).html">
-                      <img
-                        src="../assets/images/tools/category/2.jpg"
-                        alt="category"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="category-detail">
-                      <h4>plumbing</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="category-box">
-                  <div class="img-wrraper">
-                    <a href="product-page(left-sidebar).html">
-                      <img
-                        src="../assets/images/tools/category/3.jpg"
-                        alt="category"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="category-detail">
-                      <h4>construction</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="category-box">
-                  <div class="img-wrraper">
-                    <a href="product-page(left-sidebar).html">
-                      <img
-                        src="../assets/images/tools/category/4.jpg"
-                        alt="category"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="category-detail">
-                      <h4>Generators</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="category-box">
-                  <div class="img-wrraper">
-                    <a href="product-page(left-sidebar).html">
-                      <img
-                        src="../assets/images/tools/category/5.jpg"
-                        alt="category"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="category-detail">
-                      <h4>power</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="category-box">
-                  <div class="img-wrraper">
-                    <a href="product-page(left-sidebar).html">
-                      <img
-                        src="../assets/images/tools/category/3.jpg"
-                        alt="category"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="category-detail">
-                      <h4>construction</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 pr-0">
-            <div class="category-slide5 no-arrow mb--5">
-              <div>
-                <div class="category-box">
-                  <div class="img-wrraper">
-                    <a href="product-page(left-sidebar).html">
-                      <img
-                        src="../assets/images/tools/category/6.jpg"
-                        alt="category"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="category-detail">
-                      <h4>Safety</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="category-box">
-                  <div class="img-wrraper">
-                    <a href="product-page(left-sidebar).html">
-                      <img
-                        src="../assets/images/tools/category/7.jpg"
-                        alt="category"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="category-detail">
-                      <h4>hand tools</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="category-box">
-                  <div class="img-wrraper">
-                    <a href="product-page(left-sidebar).html">
-                      <img
-                        src="../assets/images/tools/category/8.jpg"
-                        alt="category"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="category-detail">
-                      <h4>Chisels</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="category-box">
-                  <div class="img-wrraper">
-                    <a href="product-page(left-sidebar).html">
-                      <img
-                        src="../assets/images/tools/category/9.jpg"
-                        alt="category"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="category-detail">
-                      <h4>welding</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="category-box">
-                  <div class="img-wrraper">
-                    <a href="product-page(left-sidebar).html">
-                      <img
-                        src="../assets/images/tools/category/10.jpg"
-                        alt="category"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="category-detail">
-                      <h4>electrical</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="category-box">
-                  <div class="img-wrraper">
-                    <a href="product-page(left-sidebar).html">
-                      <img
-                        src="../assets/images/tools/category/8.jpg"
-                        alt="category"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="category-detail">
-                      <h4>Chisels</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- category end-->
-
-    <!--collection banner start-->
-    <section class="collection-banner section-py-space b-g-white">
-      <div class="container-fluid">
-        <div class="row collection2">
-          <div class="col-md-4">
-            <div
-              class="collection-banner-main p-left text-center banner-style3 banner-13"
-            >
-              <div class="collection-img">
-                <img
-                  src="../assets/images/tools/collection-banner/1.jpg"
-                  class="img-fluid bg-img"
-                  alt="banner"
-                />
-              </div>
-              <div class="collection-banner-contain">
-                <div>
-                  <h3>best discount</h3>
-                  <h4>cordless tools</h4>
-                  <a
-                    href="product-page(left-sidebar).html"
-                    class="btn btn-rounded btn-sm"
-                    >shop now</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="collection-banner-main banner-style3 p-left text-center banner-13"
-            >
-              <div class="collection-img">
-                <img
-                  src="../assets/images/tools/collection-banner/2.jpg"
-                  class="img-fluid bg-img"
-                  alt="banner"
-                />
-              </div>
-              <div class="collection-banner-contain">
-                <div>
-                  <h3>up to 50% off</h3>
-                  <h4>replaair parts</h4>
-                  <a
-                    href="product-page(left-sidebar).html"
-                    class="btn btn-rounded btn-sm"
-                    >shop now</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="collection-banner-main banner-style3 p-left text-center banner-13"
-            >
-              <div class="collection-img">
-                <img
-                  src="../assets/images/tools/collection-banner/3.jpg"
-                  class="img-fluid bg-img"
-                  alt="banner"
-                />
-              </div>
-              <div class="collection-banner-contain">
-                <div>
-                  <h3>great offers</h3>
-                  <h4>wood cutter</h4>
-                  <a
-                    href="product-page(left-sidebar).html"
-                    class="btn btn-rounded btn-sm"
-                    >shop now</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--collection banner end-->
-
-    <!--tab product-->
+    <!--temukan kendaraanmu start-->
     <section class="section-py-space">
       <div class="tab-product-main">
         <div class="tab-prodcut-contain">
@@ -991,7 +761,6 @@
         </div>
       </div>
     </section>
-    <!--tab product-->
 
     <!-- media tab start -->
     <section class="ratio_40 section-pb-space">
@@ -1003,7 +772,6 @@
                 <!-- content tab 1 best diskon -->
                 <div id="tab-1" class="tab-content active default">
                   <div class="product-slide-5 product-m no-arrow">
-                    
                     <!-- custom card produk box for loop -->
                     <div>
                       <div class="product-box">
@@ -1024,18 +792,15 @@
                           >
                             add to cart
                           </button>
-                          <div class="best-label" >
+                          <div class="best-label">
                             <div>Best Diskon</div>
                           </div>
                         </div>
                         <div class="product-detail product-detail2">
-
                           <a href="product-page(left-sidebar).html">
                             <h3>BeAT</h3>
                           </a>
-                          <h3>
-                              Harga Mulai
-                          </h3>
+                          <h3>Harga Mulai</h3>
                           <h5>
                             Rp. 23,050,000
                             <span>Rp. 18,050,000</span>
@@ -1044,7 +809,7 @@
                       </div>
                     </div>
                     <!-- custom card produk box for loop end -->
-                    
+
                     <!-- custom card produk box for loop -->
                     <div>
                       <div class="product-box">
@@ -1065,18 +830,15 @@
                           >
                             add to cart
                           </button>
-                          <div class="best-label" >
+                          <div class="best-label">
                             <div>Best Diskon</div>
                           </div>
                         </div>
                         <div class="product-detail product-detail2">
-
                           <a href="product-page(left-sidebar).html">
                             <h3>BeAT</h3>
                           </a>
-                          <h3>
-                              Harga Mulai
-                          </h3>
+                          <h3>Harga Mulai</h3>
                           <h5>
                             Rp. 23,050,000
                             <span>Rp. 18,050,000</span>
@@ -1085,7 +847,7 @@
                       </div>
                     </div>
                     <!-- custom card produk box for loop end -->
-                    
+
                     <!-- custom card produk box for loop -->
                     <div>
                       <div class="product-box">
@@ -1106,18 +868,15 @@
                           >
                             add to cart
                           </button>
-                          <div class="best-label" >
+                          <div class="best-label">
                             <div>Best Diskon</div>
                           </div>
                         </div>
                         <div class="product-detail product-detail2">
-
                           <a href="product-page(left-sidebar).html">
                             <h3>BeAT</h3>
                           </a>
-                          <h3>
-                              Harga Mulai
-                          </h3>
+                          <h3>Harga Mulai</h3>
                           <h5>
                             Rp. 23,050,000
                             <span>Rp. 18,050,000</span>
@@ -1126,7 +885,7 @@
                       </div>
                     </div>
                     <!-- custom card produk box for loop end -->
-                    
+
                     <!-- custom card produk box for loop -->
                     <div>
                       <div class="product-box">
@@ -1147,18 +906,15 @@
                           >
                             add to cart
                           </button>
-                          <div class="best-label" >
+                          <div class="best-label">
                             <div>Best Diskon</div>
                           </div>
                         </div>
                         <div class="product-detail product-detail2">
-
                           <a href="product-page(left-sidebar).html">
                             <h3>BeAT</h3>
                           </a>
-                          <h3>
-                              Harga Mulai
-                          </h3>
+                          <h3>Harga Mulai</h3>
                           <h5>
                             Rp. 23,050,000
                             <span>Rp. 18,050,000</span>
@@ -1167,7 +923,7 @@
                       </div>
                     </div>
                     <!-- custom card produk box for loop end -->
-                    
+
                     <!-- custom card produk box for loop -->
                     <div>
                       <div class="product-box">
@@ -1188,18 +944,15 @@
                           >
                             add to cart
                           </button>
-                          <div class="best-label" >
+                          <div class="best-label">
                             <div>Best Diskon</div>
                           </div>
                         </div>
                         <div class="product-detail product-detail2">
-
                           <a href="product-page(left-sidebar).html">
                             <h3>BeAT</h3>
                           </a>
-                          <h3>
-                              Harga Mulai
-                          </h3>
+                          <h3>Harga Mulai</h3>
                           <h5>
                             Rp. 23,050,000
                             <span>Rp. 18,050,000</span>
@@ -1208,7 +961,7 @@
                       </div>
                     </div>
                     <!-- custom card produk box for loop end -->
-                    
+
                     <!-- custom card produk box for loop -->
                     <div>
                       <div class="product-box">
@@ -1229,18 +982,15 @@
                           >
                             add to cart
                           </button>
-                          <div class="best-label" >
+                          <div class="best-label">
                             <div>Best Diskon</div>
                           </div>
                         </div>
                         <div class="product-detail product-detail2">
-
                           <a href="product-page(left-sidebar).html">
                             <h3>BeAT</h3>
                           </a>
-                          <h3>
-                              Harga Mulai
-                          </h3>
+                          <h3>Harga Mulai</h3>
                           <h5>
                             Rp. 23,050,000
                             <span>Rp. 18,050,000</span>
@@ -1249,13 +999,11 @@
                       </div>
                     </div>
                     <!-- custom card produk box for loop end -->
-                    
                   </div>
                 </div>
                 <!-- content tab 2 best dp -->
                 <div id="tab-2" class="tab-content">
                   <div class="product-slide-5 product-m no-arrow">
-
                     <!-- custom card produk box for loop -->
                     <div>
                       <div class="product-box">
@@ -1276,60 +1024,15 @@
                           >
                             add to cart
                           </button>
-                          <div class="best-label" >
+                          <div class="best-label">
                             <div>Best DP</div>
                           </div>
                         </div>
                         <div class="product-detail product-detail2">
-
                           <a href="product-page(left-sidebar).html">
                             <h3>CRF150L</h3>
                           </a>
-                          <h3>
-                              Harga Mulai
-                          </h3>
-                          <h5>
-                            Rp. 35,930,000
-                            <span>Rp. 39,000,000</span>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- custom card produk box for loop end -->
-                    
-
-                    <!-- custom card produk box for loop -->
-                    <div>
-                      <div class="product-box">
-                        <div class="product-imgbox">
-                          <div class="product-front">
-                            <a href="product-page(left-sidebar).html">
-                              <img
-                                src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-motor-new-crf150l-1-25102021-084848.png"
-                                class="img-fluid"
-                                alt="product"
-                              />
-                            </a>
-                          </div>
-                          <button
-                            type="button"
-                            class="btn btn-outline btn-cart tooltip-top add-cartnoty"
-                            data-tippy-content="Add to cart"
-                          >
-                            add to cart
-                          </button>
-                          <div class="best-label" >
-                            <div>Best DP</div>
-                          </div>
-                        </div>
-                        <div class="product-detail product-detail2">
-
-                          <a href="product-page(left-sidebar).html">
-                            <h3>CRF150L</h3>
-                          </a>
-                          <h3>
-                              Harga Mulai
-                          </h3>
+                          <h3>Harga Mulai</h3>
                           <h5>
                             Rp. 35,930,000
                             <span>Rp. 39,000,000</span>
@@ -1359,18 +1062,15 @@
                           >
                             add to cart
                           </button>
-                          <div class="best-label" >
+                          <div class="best-label">
                             <div>Best DP</div>
                           </div>
                         </div>
                         <div class="product-detail product-detail2">
-
                           <a href="product-page(left-sidebar).html">
                             <h3>CRF150L</h3>
                           </a>
-                          <h3>
-                              Harga Mulai
-                          </h3>
+                          <h3>Harga Mulai</h3>
                           <h5>
                             Rp. 35,930,000
                             <span>Rp. 39,000,000</span>
@@ -1400,18 +1100,15 @@
                           >
                             add to cart
                           </button>
-                          <div class="best-label" >
+                          <div class="best-label">
                             <div>Best DP</div>
                           </div>
                         </div>
                         <div class="product-detail product-detail2">
-
                           <a href="product-page(left-sidebar).html">
                             <h3>CRF150L</h3>
                           </a>
-                          <h3>
-                              Harga Mulai
-                          </h3>
+                          <h3>Harga Mulai</h3>
                           <h5>
                             Rp. 35,930,000
                             <span>Rp. 39,000,000</span>
@@ -1441,18 +1138,15 @@
                           >
                             add to cart
                           </button>
-                          <div class="best-label" >
+                          <div class="best-label">
                             <div>Best DP</div>
                           </div>
                         </div>
                         <div class="product-detail product-detail2">
-
                           <a href="product-page(left-sidebar).html">
                             <h3>CRF150L</h3>
                           </a>
-                          <h3>
-                              Harga Mulai
-                          </h3>
+                          <h3>Harga Mulai</h3>
                           <h5>
                             Rp. 35,930,000
                             <span>Rp. 39,000,000</span>
@@ -1462,13 +1156,49 @@
                     </div>
                     <!-- custom card produk box for loop end -->
 
+                    <!-- custom card produk box for loop -->
+                    <div>
+                      <div class="product-box">
+                        <div class="product-imgbox">
+                          <div class="product-front">
+                            <a href="product-page(left-sidebar).html">
+                              <img
+                                src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-motor-new-crf150l-1-25102021-084848.png"
+                                class="img-fluid"
+                                alt="product"
+                              />
+                            </a>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-outline btn-cart tooltip-top add-cartnoty"
+                            data-tippy-content="Add to cart"
+                          >
+                            add to cart
+                          </button>
+                          <div class="best-label">
+                            <div>Best DP</div>
+                          </div>
+                        </div>
+                        <div class="product-detail product-detail2">
+                          <a href="product-page(left-sidebar).html">
+                            <h3>CRF150L</h3>
+                          </a>
+                          <h3>Harga Mulai</h3>
+                          <h5>
+                            Rp. 35,930,000
+                            <span>Rp. 39,000,000</span>
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- custom card produk box for loop end -->
                   </div>
                 </div>
 
                 <!-- content tab 2 best dp -->
                 <div id="tab-3" class="tab-content">
                   <div class="product-slide-5 product-m no-arrow">
-
                     <!-- custom card produk box for loop -->
                     <div>
                       <div class="product-box">
@@ -1489,18 +1219,15 @@
                           >
                             add to cart
                           </button>
-                          <div class="best-label" >
+                          <div class="best-label">
                             <div>Best Termurah</div>
                           </div>
                         </div>
                         <div class="product-detail product-detail2">
-
                           <a href="product-page(left-sidebar).html">
                             <h3>Revo</h3>
                           </a>
-                          <h3>
-                              Harga Mulai
-                          </h3>
+                          <h3>Harga Mulai</h3>
                           <h5>
                             Rp. 16,020,000
                             <span>Rp. 19,000,000</span>
@@ -1530,18 +1257,15 @@
                           >
                             add to cart
                           </button>
-                          <div class="best-label" >
+                          <div class="best-label">
                             <div>Best Termurah</div>
                           </div>
                         </div>
                         <div class="product-detail product-detail2">
-
                           <a href="product-page(left-sidebar).html">
                             <h3>Revo</h3>
                           </a>
-                          <h3>
-                              Harga Mulai
-                          </h3>
+                          <h3>Harga Mulai</h3>
                           <h5>
                             Rp. 16,020,000
                             <span>Rp. 19,000,000</span>
@@ -1571,18 +1295,15 @@
                           >
                             add to cart
                           </button>
-                          <div class="best-label" >
+                          <div class="best-label">
                             <div>Best Termurah</div>
                           </div>
                         </div>
                         <div class="product-detail product-detail2">
-
                           <a href="product-page(left-sidebar).html">
                             <h3>Revo</h3>
                           </a>
-                          <h3>
-                              Harga Mulai
-                          </h3>
+                          <h3>Harga Mulai</h3>
                           <h5>
                             Rp. 16,020,000
                             <span>Rp. 19,000,000</span>
@@ -1612,18 +1333,15 @@
                           >
                             add to cart
                           </button>
-                          <div class="best-label" >
+                          <div class="best-label">
                             <div>Best Termurah</div>
                           </div>
                         </div>
                         <div class="product-detail product-detail2">
-
                           <a href="product-page(left-sidebar).html">
                             <h3>Revo</h3>
                           </a>
-                          <h3>
-                              Harga Mulai
-                          </h3>
+                          <h3>Harga Mulai</h3>
                           <h5>
                             Rp. 16,020,000
                             <span>Rp. 19,000,000</span>
@@ -1653,18 +1371,15 @@
                           >
                             add to cart
                           </button>
-                          <div class="best-label" >
+                          <div class="best-label">
                             <div>Best Termurah</div>
                           </div>
                         </div>
                         <div class="product-detail product-detail2">
-
                           <a href="product-page(left-sidebar).html">
                             <h3>Revo</h3>
                           </a>
-                          <h3>
-                              Harga Mulai
-                          </h3>
+                          <h3>Harga Mulai</h3>
                           <h5>
                             Rp. 16,020,000
                             <span>Rp. 19,000,000</span>
@@ -1673,7 +1388,6 @@
                       </div>
                     </div>
                     <!-- custom card produk box for loop end -->
-
                   </div>
                 </div>
                 <div id="tab-4" class="tab-content">
@@ -3049,6 +2763,703 @@
     </section>
     <!-- media tab end -->
 
+    <!--temukan kendaraanmu end-->
+
+    <!-- best motor -->
+    <div class="list-product">
+      <div class="tab-content">
+        <div class="tab-pane fade"></div>
+      </div>
+    </div>
+    <!-- best motor end -->
+
+    <!-- title start -->
+    <div class="title8 section-big-pt-space">
+      <h4>trending category</h4>
+    </div>
+    <!-- title start -->
+
+    <!-- category start -->
+    <section class="category3 section-big-pb-space">
+      <div class="custom-container">
+        <div class="row category-block">
+          <div class="col-12 pr-0">
+            <div class="category-slide5 no-arrow mb--5">
+              <div>
+                <div class="category-box">
+                  <div class="img-wrraper">
+                    <a href="product-page(left-sidebar).html">
+                      <img
+                        src="../assets/images/tools/category/1.jpg"
+                        alt="category"
+                        class="img-fluid"
+                      />
+                    </a>
+                    <div class="category-detail">
+                      <h4>automotive</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="category-box">
+                  <div class="img-wrraper">
+                    <a href="product-page(left-sidebar).html">
+                      <img
+                        src="../assets/images/tools/category/2.jpg"
+                        alt="category"
+                        class="img-fluid"
+                      />
+                    </a>
+                    <div class="category-detail">
+                      <h4>plumbing</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="category-box">
+                  <div class="img-wrraper">
+                    <a href="product-page(left-sidebar).html">
+                      <img
+                        src="../assets/images/tools/category/3.jpg"
+                        alt="category"
+                        class="img-fluid"
+                      />
+                    </a>
+                    <div class="category-detail">
+                      <h4>construction</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="category-box">
+                  <div class="img-wrraper">
+                    <a href="product-page(left-sidebar).html">
+                      <img
+                        src="../assets/images/tools/category/4.jpg"
+                        alt="category"
+                        class="img-fluid"
+                      />
+                    </a>
+                    <div class="category-detail">
+                      <h4>Generators</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="category-box">
+                  <div class="img-wrraper">
+                    <a href="product-page(left-sidebar).html">
+                      <img
+                        src="../assets/images/tools/category/5.jpg"
+                        alt="category"
+                        class="img-fluid"
+                      />
+                    </a>
+                    <div class="category-detail">
+                      <h4>power</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="category-box">
+                  <div class="img-wrraper">
+                    <a href="product-page(left-sidebar).html">
+                      <img
+                        src="../assets/images/tools/category/3.jpg"
+                        alt="category"
+                        class="img-fluid"
+                      />
+                    </a>
+                    <div class="category-detail">
+                      <h4>construction</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 pr-0">
+            <div class="category-slide5 no-arrow mb--5">
+              <div>
+                <div class="category-box">
+                  <div class="img-wrraper">
+                    <a href="product-page(left-sidebar).html">
+                      <img
+                        src="../assets/images/tools/category/6.jpg"
+                        alt="category"
+                        class="img-fluid"
+                      />
+                    </a>
+                    <div class="category-detail">
+                      <h4>Safety</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="category-box">
+                  <div class="img-wrraper">
+                    <a href="product-page(left-sidebar).html">
+                      <img
+                        src="../assets/images/tools/category/7.jpg"
+                        alt="category"
+                        class="img-fluid"
+                      />
+                    </a>
+                    <div class="category-detail">
+                      <h4>hand tools</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="category-box">
+                  <div class="img-wrraper">
+                    <a href="product-page(left-sidebar).html">
+                      <img
+                        src="../assets/images/tools/category/8.jpg"
+                        alt="category"
+                        class="img-fluid"
+                      />
+                    </a>
+                    <div class="category-detail">
+                      <h4>Chisels</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="category-box">
+                  <div class="img-wrraper">
+                    <a href="product-page(left-sidebar).html">
+                      <img
+                        src="../assets/images/tools/category/9.jpg"
+                        alt="category"
+                        class="img-fluid"
+                      />
+                    </a>
+                    <div class="category-detail">
+                      <h4>welding</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="category-box">
+                  <div class="img-wrraper">
+                    <a href="product-page(left-sidebar).html">
+                      <img
+                        src="../assets/images/tools/category/10.jpg"
+                        alt="category"
+                        class="img-fluid"
+                      />
+                    </a>
+                    <div class="category-detail">
+                      <h4>electrical</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="category-box">
+                  <div class="img-wrraper">
+                    <a href="product-page(left-sidebar).html">
+                      <img
+                        src="../assets/images/tools/category/8.jpg"
+                        alt="category"
+                        class="img-fluid"
+                      />
+                    </a>
+                    <div class="category-detail">
+                      <h4>Chisels</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- category end-->
+
+    <!-- perbandingan motor populer start -->
+    <section class="services1 section-pt-space block">
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-12 pr-0">
+            <div class="services-slide4 no-arrow">
+              <div>
+                <div class="card rounded-3 overflow-hidden">
+                  <div class="d-flex">
+                    <div>
+                      <div class="image-wrapper">
+                        <img
+                          class="img-fluid"
+                          src="https://imgcdn.oto.com/medium/gallery/exterior/73/985/honda-scoopy-esp-39732.jpg"
+                          alt="Honda Scoopy"
+                          title="Honda Scoopy"
+                          data-src="https://imgcdn.oto.com/medium/gallery/exterior/73/985/honda-scoopy-esp-39732.jpg"
+                        />
+                      </div>
+                      <div class="p-2">
+                        <a
+                          class="h5 block t-heading text-truncate"
+                          title="Honda Scoopy"
+                          onclick="gd.common.pushDataLayers('Homepage', 'bikes_comparison', 'click_name', 'Widget_Tracking', '1');"
+                          href="https://www.oto.com/en/motor-baru/honda/scoopy-esp"
+                        >
+                          Honda Scoopy
+                        </a>
+                        <span class="d-block fw-bold mt-2">
+                          Rp 21.88 - 22.68 Million
+                        </span>
+                        <span class="small text-muted">
+                          <!--17.4 kmpl, Petrol-->
+                        </span>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="image-wrapper">
+                        <img
+                          class="img-fluid"
+                          src="https://imgcdn.oto.com/medium/gallery/exterior/84/2527/yamaha-fazzio-31380.jpg"
+                          alt="Yamaha Fazzio"
+                          title="Yamaha Fazzio"
+                          data-src="https://imgcdn.oto.com/medium/gallery/exterior/84/2527/yamaha-fazzio-31380.jpg"
+                          onclick="gd.common.goto('https://www.oto.com/en/motor-baru/yamaha/fazzio')"
+                        />
+                      </div>
+                      <div class="p-2">
+                        <a
+                          class="h5 block t-heading text-truncate"
+                          title="Yamaha Fazzio"
+                          onclick="gd.common.pushDataLayers('Homepage', 'bikes_comparison', 'click_name', 'Widget_Tracking', '1');"
+                          href="https://www.oto.com/en/motor-baru/yamaha/fazzio"
+                        >
+                          Yamaha Fazzio
+                        </a>
+                        <span class="d-block fw-bold mt-2">
+                          Rp 22.65 - 23.05 Million
+                        </span>
+                        <span class="small text-muted">
+                          <!--17.4 kmpl, Petrol-->
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="card rounded-3 overflow-hidden">
+                  <div class="d-flex">
+                    <div>
+                      <div class="image-wrapper">
+                        <img
+                          class="img-fluid"
+                          src="https://imgcdn.oto.com/medium/gallery/exterior/73/985/honda-scoopy-esp-39732.jpg"
+                          alt="Honda Scoopy"
+                          title="Honda Scoopy"
+                          data-src="https://imgcdn.oto.com/medium/gallery/exterior/73/985/honda-scoopy-esp-39732.jpg"
+                        />
+                      </div>
+                      <div class="p-2">
+                        <a
+                          class="h5 block t-heading text-truncate"
+                          title="Honda Scoopy"
+                          onclick="gd.common.pushDataLayers('Homepage', 'bikes_comparison', 'click_name', 'Widget_Tracking', '1');"
+                          href="https://www.oto.com/en/motor-baru/honda/scoopy-esp"
+                        >
+                          Honda Scoopy
+                        </a>
+                        <span class="d-block fw-bold mt-2">
+                          Rp 21.88 - 22.68 Million
+                        </span>
+                        <span class="small text-muted">
+                          <!--17.4 kmpl, Petrol-->
+                        </span>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="image-wrapper">
+                        <img
+                          class="img-fluid"
+                          src="https://imgcdn.oto.com/medium/gallery/exterior/84/2527/yamaha-fazzio-31380.jpg"
+                          alt="Yamaha Fazzio"
+                          title="Yamaha Fazzio"
+                          data-src="https://imgcdn.oto.com/medium/gallery/exterior/84/2527/yamaha-fazzio-31380.jpg"
+                          onclick="gd.common.goto('https://www.oto.com/en/motor-baru/yamaha/fazzio')"
+                        />
+                      </div>
+                      <div class="p-2">
+                        <a
+                          class="h5 block t-heading text-truncate"
+                          title="Yamaha Fazzio"
+                          onclick="gd.common.pushDataLayers('Homepage', 'bikes_comparison', 'click_name', 'Widget_Tracking', '1');"
+                          href="https://www.oto.com/en/motor-baru/yamaha/fazzio"
+                        >
+                          Yamaha Fazzio
+                        </a>
+                        <span class="d-block fw-bold mt-2">
+                          Rp 22.65 - 23.05 Million
+                        </span>
+                        <span class="small text-muted">
+                          <!--17.4 kmpl, Petrol-->
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="card rounded-3 overflow-hidden">
+                  <div class="d-flex">
+                    <div>
+                      <div class="image-wrapper">
+                        <img
+                          class="img-fluid"
+                          src="https://imgcdn.oto.com/medium/gallery/exterior/73/985/honda-scoopy-esp-39732.jpg"
+                          alt="Honda Scoopy"
+                          title="Honda Scoopy"
+                          data-src="https://imgcdn.oto.com/medium/gallery/exterior/73/985/honda-scoopy-esp-39732.jpg"
+                        />
+                      </div>
+                      <div class="p-2">
+                        <a
+                          class="h5 block t-heading text-truncate"
+                          title="Honda Scoopy"
+                          onclick="gd.common.pushDataLayers('Homepage', 'bikes_comparison', 'click_name', 'Widget_Tracking', '1');"
+                          href="https://www.oto.com/en/motor-baru/honda/scoopy-esp"
+                        >
+                          Honda Scoopy
+                        </a>
+                        <span class="d-block fw-bold mt-2">
+                          Rp 21.88 - 22.68 Million
+                        </span>
+                        <span class="small text-muted">
+                          <!--17.4 kmpl, Petrol-->
+                        </span>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="image-wrapper">
+                        <img
+                          class="img-fluid"
+                          src="https://imgcdn.oto.com/medium/gallery/exterior/84/2527/yamaha-fazzio-31380.jpg"
+                          alt="Yamaha Fazzio"
+                          title="Yamaha Fazzio"
+                          data-src="https://imgcdn.oto.com/medium/gallery/exterior/84/2527/yamaha-fazzio-31380.jpg"
+                          onclick="gd.common.goto('https://www.oto.com/en/motor-baru/yamaha/fazzio')"
+                        />
+                      </div>
+                      <div class="p-2">
+                        <a
+                          class="h5 block t-heading text-truncate"
+                          title="Yamaha Fazzio"
+                          onclick="gd.common.pushDataLayers('Homepage', 'bikes_comparison', 'click_name', 'Widget_Tracking', '1');"
+                          href="https://www.oto.com/en/motor-baru/yamaha/fazzio"
+                        >
+                          Yamaha Fazzio
+                        </a>
+                        <span class="d-block fw-bold mt-2">
+                          Rp 22.65 - 23.05 Million
+                        </span>
+                        <span class="small text-muted">
+                          <!--17.4 kmpl, Petrol-->
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="card rounded-3 overflow-hidden">
+                  <div class="d-flex">
+                    <div>
+                      <div class="image-wrapper">
+                        <img
+                          class="img-fluid"
+                          src="https://imgcdn.oto.com/medium/gallery/exterior/73/985/honda-scoopy-esp-39732.jpg"
+                          alt="Honda Scoopy"
+                          title="Honda Scoopy"
+                          data-src="https://imgcdn.oto.com/medium/gallery/exterior/73/985/honda-scoopy-esp-39732.jpg"
+                        />
+                      </div>
+                      <div class="p-2">
+                        <a
+                          class="h5 block t-heading text-truncate"
+                          title="Honda Scoopy"
+                          onclick="gd.common.pushDataLayers('Homepage', 'bikes_comparison', 'click_name', 'Widget_Tracking', '1');"
+                          href="https://www.oto.com/en/motor-baru/honda/scoopy-esp"
+                        >
+                          Honda Scoopy
+                        </a>
+                        <span class="d-block fw-bold mt-2">
+                          Rp 21.88 - 22.68 Million
+                        </span>
+                        <span class="small text-muted">
+                          <!--17.4 kmpl, Petrol-->
+                        </span>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="image-wrapper">
+                        <img
+                          class="img-fluid"
+                          src="https://imgcdn.oto.com/medium/gallery/exterior/84/2527/yamaha-fazzio-31380.jpg"
+                          alt="Yamaha Fazzio"
+                          title="Yamaha Fazzio"
+                          data-src="https://imgcdn.oto.com/medium/gallery/exterior/84/2527/yamaha-fazzio-31380.jpg"
+                          onclick="gd.common.goto('https://www.oto.com/en/motor-baru/yamaha/fazzio')"
+                        />
+                      </div>
+                      <div class="p-2">
+                        <a
+                          class="h5 block t-heading text-truncate"
+                          title="Yamaha Fazzio"
+                          onclick="gd.common.pushDataLayers('Homepage', 'bikes_comparison', 'click_name', 'Widget_Tracking', '1');"
+                          href="https://www.oto.com/en/motor-baru/yamaha/fazzio"
+                        >
+                          Yamaha Fazzio
+                        </a>
+                        <span class="d-block fw-bold mt-2">
+                          Rp 22.65 - 23.05 Million
+                        </span>
+                        <span class="small text-muted">
+                          <!--17.4 kmpl, Petrol-->
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="card rounded-3 overflow-hidden">
+                  <div class="d-flex">
+                    <div>
+                      <div class="image-wrapper">
+                        <img
+                          class="img-fluid"
+                          src="https://imgcdn.oto.com/medium/gallery/exterior/73/985/honda-scoopy-esp-39732.jpg"
+                          alt="Honda Scoopy"
+                          title="Honda Scoopy"
+                          data-src="https://imgcdn.oto.com/medium/gallery/exterior/73/985/honda-scoopy-esp-39732.jpg"
+                        />
+                      </div>
+                      <div class="p-2">
+                        <a
+                          class="h5 block t-heading text-truncate"
+                          title="Honda Scoopy"
+                          onclick="gd.common.pushDataLayers('Homepage', 'bikes_comparison', 'click_name', 'Widget_Tracking', '1');"
+                          href="https://www.oto.com/en/motor-baru/honda/scoopy-esp"
+                        >
+                          Honda Scoopy
+                        </a>
+                        <span class="d-block fw-bold mt-2">
+                          Rp 21.88 - 22.68 Million
+                        </span>
+                        <span class="small text-muted">
+                          <!--17.4 kmpl, Petrol-->
+                        </span>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="image-wrapper">
+                        <img
+                          class="img-fluid"
+                          src="https://imgcdn.oto.com/medium/gallery/exterior/84/2527/yamaha-fazzio-31380.jpg"
+                          alt="Yamaha Fazzio"
+                          title="Yamaha Fazzio"
+                          data-src="https://imgcdn.oto.com/medium/gallery/exterior/84/2527/yamaha-fazzio-31380.jpg"
+                          onclick="gd.common.goto('https://www.oto.com/en/motor-baru/yamaha/fazzio')"
+                        />
+                      </div>
+                      <div class="p-2">
+                        <a
+                          class="h5 block t-heading text-truncate"
+                          title="Yamaha Fazzio"
+                          onclick="gd.common.pushDataLayers('Homepage', 'bikes_comparison', 'click_name', 'Widget_Tracking', '1');"
+                          href="https://www.oto.com/en/motor-baru/yamaha/fazzio"
+                        >
+                          Yamaha Fazzio
+                        </a>
+                        <span class="d-block fw-bold mt-2">
+                          Rp 22.65 - 23.05 Million
+                        </span>
+                        <span class="small text-muted">
+                          <!--17.4 kmpl, Petrol-->
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- perbanindan motor populer end -->
+
+    <!--blog start-->
+    <div class="title8">
+      <h2>Berita Blog</h2>
+    </div>
+    <section class="blog section-big-pb-space">
+      <div class="custom-container">
+        <div class="row">
+          <div class="col pr-0">
+            <div class="blog-slide-4 no-arrow">
+              <div>
+                <div class="blog-contain">
+                  <div class="blog-img">
+                    <a href="blog-details.html">
+                      <img
+                        src="https://imgcdnblog.carbay.com/wp-content/uploads/2023/09/12114412/United-e-motor-2-500x333.jpg"
+                        alt="blog"
+                        class="img-fluid w-100"
+                      />
+                    </a>
+                  </div>
+                  <div class="blog-details-2 text-start">
+                    <a href="blog-details.html">
+                      <h4>Ini Judul Berita</h4>
+                    </a>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur eleifend a massa rhoncus gravida.
+                    </p>
+                  </div>
+                  <div class="blog-label1">27 <br />nov</div>
+                </div>
+              </div>
+              <div>
+                <div class="blog-contain">
+                  <div class="blog-img">
+                    <a href="blog-details.html">
+                      <img
+                        src="https://imgcdnblog.carbay.com/wp-content/uploads/2023/09/12114412/United-e-motor-2-500x333.jpg"
+                        alt="blog"
+                        class="img-fluid w-100"
+                      />
+                    </a>
+                  </div>
+                  <div class="blog-details-2 text-start">
+                    <a href="blog-details.html">
+                      <h4>Ini Judul Berita</h4>
+                    </a>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur eleifend a massa rhoncus gravida.
+                    </p>
+                  </div>
+                  <div class="blog-label1">27 <br />nov</div>
+                </div>
+              </div>
+              <div>
+                <div class="blog-contain">
+                  <div class="blog-img">
+                    <a href="blog-details.html">
+                      <img
+                        src="https://imgcdnblog.carbay.com/wp-content/uploads/2023/09/12114412/United-e-motor-2-500x333.jpg"
+                        alt="blog"
+                        class="img-fluid w-100"
+                      />
+                    </a>
+                  </div>
+                  <div class="blog-details-2 text-start">
+                    <a href="blog-details.html">
+                      <h4>Ini Judul Berita</h4>
+                    </a>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur eleifend a massa rhoncus gravida.
+                    </p>
+                  </div>
+                  <div class="blog-label1">27 <br />nov</div>
+                </div>
+              </div>
+              <div>
+                <div class="blog-contain">
+                  <div class="blog-img">
+                    <a href="blog-details.html">
+                      <img
+                        src="https://imgcdnblog.carbay.com/wp-content/uploads/2023/09/12114412/United-e-motor-2-500x333.jpg"
+                        alt="blog"
+                        class="img-fluid w-100"
+                      />
+                    </a>
+                  </div>
+                  <div class="blog-details-2 text-start">
+                    <a href="blog-details.html">
+                      <h4>Ini Judul Berita</h4>
+                    </a>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur eleifend a massa rhoncus gravida.
+                    </p>
+                  </div>
+                  <div class="blog-label1">27 <br />nov</div>
+                </div>
+              </div>
+              <div>
+                <div class="blog-contain">
+                  <div class="blog-img">
+                    <a href="blog-details.html">
+                      <img
+                        src="https://imgcdnblog.carbay.com/wp-content/uploads/2023/09/12114412/United-e-motor-2-500x333.jpg"
+                        alt="blog"
+                        class="img-fluid w-100"
+                      />
+                    </a>
+                  </div>
+                  <div class="blog-details-2 text-start">
+                    <a href="blog-details.html">
+                      <h4>Ini Judul Berita</h4>
+                    </a>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur eleifend a massa rhoncus gravida.
+                    </p>
+                  </div>
+                  <div class="blog-label1">27 <br />nov</div>
+                </div>
+              </div>
+              <div>
+                <div class="blog-contain">
+                  <div class="blog-img">
+                    <a href="blog-details.html">
+                      <img
+                        src="https://imgcdnblog.carbay.com/wp-content/uploads/2023/09/12114412/United-e-motor-2-500x333.jpg"
+                        alt="blog"
+                        class="img-fluid w-100"
+                      />
+                    </a>
+                  </div>
+                  <div class="blog-details-2 text-start">
+                    <a href="blog-details.html">
+                      <h4>Ini Judul Berita</h4>
+                    </a>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur eleifend a massa rhoncus gravida.
+                    </p>
+                  </div>
+                  <div class="blog-label1">27 <br />nov</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--blog end-->
+
     <!-- video section start -->
     <section class="video-banner">
       <img
@@ -3079,6 +3490,154 @@
       </div>
     </section>
     <!-- video section end-->
+
+    <!-- review start -->
+    <div class="title8 section-big-pt-space">
+      <h2>Review Pengguna</h2>
+    </div>
+    <section class="category3 section-big-pb-space">
+      <div class="custom-container">
+        <div class="row category-block">
+          <div class="col-12 pr-0">
+            <div class="category-slide5 no-arrow mb--5">
+              <div>
+                <div class="category-box text-start">
+                  <h5 class="card-title">Review Jujur Stargazer</h5>
+                  <div class="d-flex">
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <p class="card-text pt-2">
+                    Nyaman, sudah setahun memakai ini dan irit bahan bakar.
+                    Ditambah lagi fitur Blue Link dan Android Auto yang sudah
+                    wireless, jadi tidak perlu lagi repot untuk melihat map,
+                    mendengarkan lagu, dll.
+                  </p>
+                  <div class="pt-2">
+                    <p>Ipan</p>
+                    <p>6 Sepetember 2023</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="category-box text-start">
+                  <h5 class="card-title">Review Jujur Stargazer</h5>
+                  <div class="d-flex">
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <p class="card-text pt-2">
+                    Nyaman, sudah setahun memakai ini dan irit bahan bakar.
+                    Ditambah lagi fitur Blue Link dan Android Auto yang sudah
+                    wireless, jadi tidak perlu lagi repot untuk melihat map,
+                    mendengarkan lagu, dll.
+                  </p>
+                  <div class="pt-2">
+                    <p>Ipan</p>
+                    <p>6 Sepetember 2023</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="category-box text-start">
+                  <h5 class="card-title">Review Jujur Stargazer</h5>
+                  <div class="d-flex">
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <p class="card-text pt-2">
+                    Nyaman, sudah setahun memakai ini dan irit bahan bakar.
+                    Ditambah lagi fitur Blue Link dan Android Auto yang sudah
+                    wireless, jadi tidak perlu lagi repot untuk melihat map,
+                    mendengarkan lagu, dll.
+                  </p>
+                  <div class="pt-2">
+                    <p>Ipan</p>
+                    <p>6 Sepetember 2023</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="category-box text-start">
+                  <h5 class="card-title">Review Jujur Stargazer</h5>
+                  <div class="d-flex">
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <p class="card-text pt-2">
+                    Nyaman, sudah setahun memakai ini dan irit bahan bakar.
+                    Ditambah lagi fitur Blue Link dan Android Auto yang sudah
+                    wireless, jadi tidak perlu lagi repot untuk melihat map,
+                    mendengarkan lagu, dll.
+                  </p>
+                  <div class="pt-2">
+                    <p>Ipan</p>
+                    <p>6 Sepetember 2023</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="category-box text-start">
+                  <h5 class="card-title">Review Jujur Stargazer</h5>
+                  <div class="d-flex">
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <p class="card-text pt-2">
+                    Nyaman, sudah setahun memakai ini dan irit bahan bakar.
+                    Ditambah lagi fitur Blue Link dan Android Auto yang sudah
+                    wireless, jadi tidak perlu lagi repot untuk melihat map,
+                    mendengarkan lagu, dll.
+                  </p>
+                  <div class="pt-2">
+                    <p>Ipan</p>
+                    <p>6 Sepetember 2023</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="category-box text-start">
+                  <h5 class="card-title">Review Jujur Stargazer</h5>
+                  <div class="d-flex">
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <p class="card-text pt-2">
+                    Nyaman, sudah setahun memakai ini dan irit bahan bakar.
+                    Ditambah lagi fitur Blue Link dan Android Auto yang sudah
+                    wireless, jadi tidak perlu lagi repot untuk melihat map,
+                    mendengarkan lagu, dll.
+                  </p>
+                  <div class="pt-2">
+                    <p>Ipan</p>
+                    <p>6 Sepetember 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- review end-->
 
     <!--title start-->
     <div class="title8 section-big-pt-space">
@@ -5135,38 +5694,36 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="../assets/js/custom/custom.js"></script>
 
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
 
+    <script>
+      // gpt
+      function updateBubble(input) {
+        const val = input.value;
+        const bubble = document.getElementById("bubble");
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+        // Konversi nilai ke format mata uang Rupiah
+        const formattedValue = formatToRupiah(val);
+        bubble.textContent = formattedValue;
 
-<!-- (Optional) Latest compiled and minified JavaScript translation files -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
+        // Sorta magic numbers based on size of the native UI thumb
+        const min = input.min ? parseFloat(input.min) : 0;
+        const max = input.max ? parseFloat(input.max) : 100;
+        const newVal = ((val - min) * 100) / (max - min);
+        bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+      }
 
-
-<script>
-    // gpt 
-  function updateBubble(input) {
-    const val = input.value;
-    const bubble = document.getElementById('bubble');
-
-    // Konversi nilai ke format mata uang Rupiah
-    const formattedValue = formatToRupiah(val);
-    bubble.textContent = formattedValue;
-
-    // Sorta magic numbers based on size of the native UI thumb
-    const min = input.min ? parseFloat(input.min) : 0;
-    const max = input.max ? parseFloat(input.max) : 100;
-    const newVal = ((val - min) * 100) / (max - min);
-    bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
-  }
-
-  function formatToRupiah(value) {
-    // Gunakan metode Intl.NumberFormat untuk mengonversi nilai menjadi format mata uang Rupiah
-    return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(value);
-  }
-
-</script>
+      function formatToRupiah(value) {
+        // Gunakan metode Intl.NumberFormat untuk mengonversi nilai menjadi format mata uang Rupiah
+        return new Intl.NumberFormat("id-ID", {
+          style: "currency",
+          currency: "IDR",
+        }).format(value);
+      }
+    </script>
   </body>
 </html>
