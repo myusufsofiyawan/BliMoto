@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  var kotaList = ['jakarta', 'bogor', 'depok', 'tanggerang', 'bekasi']
+  // var kotaList = ['jakarta', 'bogor', 'depok', 'tanggerang', 'bekasi']
 
 
   $(".js-example-basic-single").select2(
@@ -9,7 +9,7 @@ $(document).ready(function () {
     }
   );
 
-  $('#kotaSelect').select2({ data: kotaList })
+  // $('#kotaSelect').select2({ data: kotaList })
 
   $('.selectpicker').selectpicker();
 
@@ -38,7 +38,19 @@ $(document).ready(function () {
 
 
 
-  // gpt 
+  // var navbar = $('.navbar2-child');
+  // var customContainer = $('.navbar2-child');
+  // var navbarHeight = navbar.outerHeight();
+
+  // $(window).scroll(function () {
+  //   if ($(this).scrollTop() > navbarHeight) {
+  //     customContainer.css('background-color', 'white');
+  //     $('#navbar-wrapper').removeClass('bg-basic');
+  //   } else {
+  //     customContainer.css('background-color', '#dd0202');
+  //     $('#navbar-wrapper').addClass('bg-basic');
+  //   }
+  // });
 
 
 
