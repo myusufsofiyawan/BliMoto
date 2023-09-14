@@ -8,6 +8,16 @@
     border-bottom-left-radius: 50px;
   } */
 
+/* color area */
+.bg-basic {
+  background-color: #dd0202;
+}
+
+.scroll-white {
+  background-color: #fff;
+}
+/* color area end */
+
 .best-label {
   position: absolute;
   top: 0;
@@ -210,17 +220,76 @@ section .simulasi-container .simulasi-wrapper .card {
 
   .desc-versus a {
     font-size: 10px;
-    padding: 0px;
+    padding: 5px 10px !important;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  ...;
+  .versus div {
+    background-color: white !important;
+    padding: 8px 10px;
+  }
+
+  .versus div p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-box: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .desc-versus {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .desc-versus h3 {
+    color: white;
+  }
+
+  .desc-versus a {
+    padding: 5px 10px !important;
+    font-size: 12px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  ...;
+  .versus div {
+    background-color: white !important;
+    padding: 8px 10px;
+  }
+
+  .versus div p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-box: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .desc-versus {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .desc-versus h3 {
+    color: white;
+    font-size: 23px;
+  }
+
+  .desc-versus a {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
 }
 /* ======================== RESPONSIVE AREA END ===================== */
+
+.header-search .input-group .input-group-text {
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #dd0202;
+  color: #ffffff;
+  border: none;
+}
