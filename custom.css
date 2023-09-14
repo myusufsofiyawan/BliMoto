@@ -90,7 +90,7 @@
     position: absolute;
     width: 2px;
     height: 2px;
-    background: red;
+    background: red; 
     top: 30px;
     left: 50%;
 }
@@ -102,3 +102,49 @@
 
 
   /* range area end */
+
+
+  /* card versus styling start */
+  .versus {
+    position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  }
+
+  .versus div {
+    background-color: white !important;
+    padding: 8px 10px;
+  }
+
+    .versus div p {
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      border-box: 1px solid rgba(0,0,0,0.5);
+    }
+  /* card versus styling end */
+
+  
+
+  /* review card / rating */
+  .review-wrapper {
+    min-height:250px;
+  }
+  /* review card / rating end */
+
+
+  /* area compare start */
+
+
+  .desc-versus {
+      left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  .desc-versus h3 {
+    color: white;
+  }
+
+  /* area compare end */
