@@ -131,9 +131,24 @@
 /* card versus styling end */
 
 /* review card / rating */
-.review-wrapper {
-  min-height: 250px;
+
+.owl-carousel .item {
+  min-height: 210px;
 }
+
+.owl-carousel .item .card-title {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  font-size: 16px;
+}
+.owl-carousel .item .card-text {
+  padding-top: 0.5em;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 0;
+  letter-spacing: 0.05em;
+}
+
 /* review card / rating end */
 
 /* area compare start */
@@ -176,6 +191,20 @@ section.tools-slide
   /* text-shadow: 3px 3px 3px white !important;
       text-shadow: 3px white !important; */
 }
+
+a.btn.btn-rounded.bg-basic.btn-hook {
+  position: absolute;
+  left: 18%;
+  top: 65%;
+  font-size: 30px;
+}
+/* a.btn.btn-rounded.bg-basic.btn-hook {
+  position: absolute;
+  left: 18%;
+  top: 65%;
+  font-size: 30px;
+} */
+
 /* jumbotron/ hook end  */
 
 /* simluasi start */
@@ -190,12 +219,52 @@ section .simulasi-container .simulasi-wrapper .card {
   section .simulasi-container .simulasi-wrapper .card {
     margin-top: 3rem;
   }
+  .owl-carousel .item {
+    min-height: 130px;
+    /* padding: 1px; */
+  }
+  .owl-carousel .item .card-text {
+    padding-top: 0.5em;
+    font-size: 11px;
+    line-height: 1.4;
+    margin-bottom: 0;
+    letter-spacing: 0.05em;
+  }
+  .owl-carousel .item div p:first-of-type {
+    font-size: 12px;
+  }
+  .owl-carousel .item div:last-child p:last-of-type {
+    font-size: 10px;
+  }
+
+  .btn-submit,
+  .btn-ajukan,
+  .text-view {
+    font-size: 12px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   section .simulasi-container .simulasi-wrapper .card {
     margin-top: 3rem;
+  }
+
+  .owl-carousel .item {
+    min-height: 180px;
+  }
+  .owl-carousel .item .card-text {
+    padding-top: 0.5em;
+    font-size: 11px;
+    line-height: 1.4;
+    margin-bottom: 0;
+    letter-spacing: 0.05em;
+  }
+  .owl-carousel .item div p:first-of-type {
+    font-size: 12px;
+  }
+  .owl-carousel .item div:last-child p:last-of-type {
+    font-size: 10px;
   }
 }
 
@@ -252,6 +321,22 @@ section .simulasi-container .simulasi-wrapper .card {
     padding: 5px 10px !important;
     font-size: 12px;
   }
+  .owl-carousel .item {
+    min-height: 180px;
+  }
+  .owl-carousel .item .card-text {
+    padding-top: 0.5em;
+    font-size: 11px;
+    line-height: 1.4;
+    margin-bottom: 0;
+    letter-spacing: 0.05em;
+  }
+  .owl-carousel .item div p:first-of-type {
+    font-size: 12px;
+  }
+  /* .owl-carousel .item div:last-child p:last-of-type {
+    font-size: 10px;
+  } */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

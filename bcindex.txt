@@ -275,7 +275,7 @@
                               >
                             </li>
                             <li>
-                              <a href="bandingkan-motor.html"
+                              <a href="category-page(no-sidebar).html"
                                 >Bandingkan Motor</a
                               >
                             </li>
@@ -319,10 +319,10 @@
                           >
                           <ul>
                             <li>
-                              <a href="simulasi-kredit.html">Simulasi</a>
+                              <a href="javascript:void(0)">Simulasi</a>
                             </li>
                             <li>
-                              <a href="simulasi-kredit.html">Brosur</a>
+                              <a href="javascript:void(0)">Brosur</a>
                             </li>
                             <li><a href="about-page.html">Syarat Kredit</a></li>
                             <li><a href="search.html">Info Leasing</a></li>
@@ -391,37 +391,95 @@
     </header>
     <!--header end-->
 
-    <!-- new hook slider start -->
-    <div
-      id="carouselExampleSlidesOnly"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="assets/images/custom/hook-bg.webp"
-            class="d-block w-100"
-            alt="..."
-          />
+    <!--home slider start-->
+    <section class="tools-slide home-slide">
+      <div class="slide-1 no-arrow">
+        <!-- cek -->
+        <div>
+          <div class="slide-main backanimate">
+            <img
+              src="assets/images/custom/hook-bg.webp"
+              class="img-fluid bg-img"
+              alt="tools-slider"
+            />
+            <div class="animat-block">
+              <!-- <img
+                id="img-1"
+                width="50px"
+                src="assets/images/custom/hook-bike.webp"
+                class="img-fluid animat1"
+                alt="tools-slider"
+              /> -->
+            </div>
+            <div class="custom-container">
+              <div class="row">
+                <div class="col-12 p-0 position-relative">
+                  <div class="slide-contain">
+                    <div>
+                      <!-- <h2>Dapatkan</h2>
+                      <h3>Harga Terbaik</h3>
+                      <p id="sampel">Sample</p> -->
+                      <!-- <p>
+                        In addition to genuine tool parts, we also supply a wide
+                        range of high quality tool parts from after makers.
+                      </p> -->
+                      <a
+                        href="product-page(left-sidebar).html"
+                        class="btn btn-rounded bg-basic btn-hook"
+
+                      >
+                        Beli Sekarang
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img
-            src="assets/images/custom/hook-bg.webp"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="assets/images/custom/hook-bg.webp"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
+        <!-- cek -->
+        <!-- <div>
+          <div class="slide-main backanimate">
+            <img
+              src="assets/images/custom/hook-bg.webp"
+              class="img-fluid bg-img"
+              alt="tools-slider"
+            />
+            <div class="animat-block">
+              <img
+                id="img-1"
+                src="assets/images/custom/hook-bike.webp"
+                class="img-fluid animat1"
+                alt="tools-slider"
+              />
+            </div>
+            <div class="custom-container">
+              <div class="row">
+                <div class="col-12 p-0 position-relative">
+                  <div class="slide-contain">
+                    <div>
+                      <h2>high quality</h2>
+                      <h3>bigdeal power tools</h3>
+                      <p>
+                        In addition to genuine tool parts, we also supply a wide
+                        range of high quality tool parts from after makers.
+                      </p>
+                      <a
+                        href="product-page(left-sidebar).html"
+                        class="btn btn-rounded"
+                      >
+                        Shop Now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
       </div>
-    </div>
-    <!-- new hook slider end -->
+    </section>
+    <!--home slider end-->
 
     <!-- simulasi kredit start -->
     <section>
