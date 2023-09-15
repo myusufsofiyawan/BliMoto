@@ -10,7 +10,11 @@
 
 /* color area */
 .bg-basic {
-  background-color: #dd0202;
+  background-color: #dd0202 !important;
+}
+
+.text-black {
+  color: black;
 }
 
 .scroll-white {
@@ -212,6 +216,10 @@ section .simulasi-container .simulasi-wrapper .card {
   margin-top: -4rem;
 }
 /* simluasi end */
+
+.select-categori {
+  background-color: #dd0202 !important;
+}
 
 /* ======================== RESPONSIVE AREA START ===================== */
 /* Extra small devices (phones, 600px and down) */
