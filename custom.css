@@ -228,6 +228,12 @@ section .simulasi-container .simulasi-wrapper .card {
   width: 14rem !important;
 }
 
+.carousel-caption {
+  position: absolute;
+  bottom: 15%;
+  left: -25%;
+}
+
 /* ======================== RESPONSIVE AREA START ===================== */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -260,6 +266,17 @@ section .simulasi-container .simulasi-wrapper .card {
   .slide-download-populer div .card.border-0 {
     width: 19rem !important;
   }
+
+  .carousel-caption {
+    position: absolute;
+    bottom: 2%;
+    left: -25%;
+  }
+
+  .carousel-caption a {
+    font-size: 6px;
+    /* padding: 20px; */
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -286,6 +303,10 @@ section .simulasi-container .simulasi-wrapper .card {
   }
   .slide-download-populer div .card.border-0 {
     width: 14rem !important;
+  }
+  .carousel-caption a {
+    font-size: 10px;
+    /* padding: 20px; */
   }
 }
 
@@ -314,6 +335,9 @@ section .simulasi-container .simulasi-wrapper .card {
   }
   .slide-download-populer div .card.border-0 {
     width: 14rem !important;
+  }
+  .carousel-caption a {
+    font-size: 12px;
   }
 }
 
@@ -399,6 +423,16 @@ section .simulasi-container .simulasi-wrapper .card {
 
   .slide-download-populer div .card.border-0 {
     width: 13rem !important;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: -25%;
+  }
+
+  .carousel-caption a {
+    font-size: 1px;
   }
 }
 /* ======================== RESPONSIVE AREA END ===================== */

@@ -76,9 +76,6 @@
 
     <!-- css custom agung -->
     <link rel="stylesheet" type="text/css" href="custom.css" />
-
-    <link rel="stylesheet" href="assets/owl/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/owl/owl.theme.default.min.css" />
   </head>
   <body class="bg-light">
     <!-- loader start -->
@@ -267,7 +264,7 @@
                           </div>
                         </li>
                         <!--HOME-->
-                        <li>
+                        <li class="active">
                           <a class="dark-menu-item text-dark" href="index.html"
                             >Home</a
                           >
@@ -409,14 +406,14 @@
           <div class="col">
             <div class="breadcrumb-contain">
               <div>
-                <h2 class="text-white">Motor</h2>
+                <h2 class="text-white">kredit</h2>
                 <ul>
                   <li>
-                    <a class="text-white" href="javascript:void(0)">motor</a>
+                    <a class="text-white" href="javascript:void(0)">kredit</a>
                   </li>
                   <li><i class="text-white fa fa-angle-double-right"></i></li>
                   <li>
-                    <a class="text-white" href="javascript:void(0)">dealer</a>
+                    <a class="text-white" href="javascript:void(0)">syarat</a>
                   </li>
                 </ul>
               </div>
@@ -426,280 +423,437 @@
       </div>
     </div>
     <!-- breadcrumb End -->
-    <!-- dealer -->
-    <section class="section-py-space my-3">
-      <div class="title8 mt-5">
-        <h4>Cari Dealer</h4>
+
+    <!-- simulasi kredit start -->
+    <section>
+      <div class="custom-container">
+        <div class="row d-flex justify-content-center">
+          <div
+            style="margin-top: -2rem"
+            class="col-11 col-md-10 px-3 py-3 card rounded-3"
+          >
+            <h3 class="text-center mb-3">Simulasi Kredit</h3>
+
+            <h4 class="text-black">Temukan kendaraan impianmu !</h4>
+            <p class="mt-2">
+              Kami telah membantu lebih dari 2000 orang untuk menemukan
+              kendaraan yang sesuai dengan kebutuhan mereka dan impian mereka.
+            </p>
+
+            <form id="form-simulasi" action="" class="mt-2">
+              <div class="row">
+                <!-- kota -->
+                <div class="col-12 col-md-3">
+                  <div class="form-group">
+                    <label for="SelectKota" class="mb-0" style="font-size: 12px"
+                      >Kota</label
+                    >
+                    <select
+                      id="kotaSelect"
+                      class="js-example-basic-single form-select form-select-sm"
+                      style="width: 100%"
+                      name="kota"
+                    >
+                      <option value="" style="width: 100%"></option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- merk -->
+                <div class="col-12 col-md-3">
+                  <div class="form-group">
+                    <label for="SelectKota" class="mb-0" style="font-size: 12px"
+                      >merk</label
+                    >
+                    <select
+                      class="js-example-basic-single form-select form-select-sm"
+                      style="width: 100%"
+                      name="merk"
+                    >
+                      <option value="AL">Alabama</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Tipe -->
+                <div class="col-12 col-md-3">
+                  <div class="form-group">
+                    <label for="SelectKota" class="mb-0" style="font-size: 12px"
+                      >Tipe</label
+                    >
+                    <select
+                      class="js-example-basic-single form-select form-select-sm"
+                      style="width: 100%"
+                      name="tipe"
+                    >
+                      <option value="AL">Alabama</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- pembayaran -->
+                <div class="col-12 col-md-3">
+                  <div class="form-group">
+                    <label for="SelectKota" class="mb-0" style="font-size: 12px"
+                      >Pembayaran</label
+                    >
+                    <select
+                      class="js-example-basic-single form-select form-select-sm"
+                      style="width: 100%"
+                      name="pembayaran"
+                    >
+                      <option value="AL">Alabama</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- baris 2 -->
+              <div class="row">
+                <!-- tenor -->
+                <div class="col-12 col-md-3">
+                  <div class="form-group">
+                    <label for="SelectKota" class="mb-0" style="font-size: 12px"
+                      >Tenor</label
+                    >
+                    <select
+                      class="js-example-basic-single form-select form-select-sm"
+                      style="width: 100%"
+                      name="tenor"
+                    >
+                      <option value="AL">Alabama</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- <div class="col-md-6">
+                  <label for="dp" class="form-label">DP</label>
+                    <input type="range" min="100000" max="20000000" class="form-range" id="dp">
+                    <output class="bubble"></output>
+                </div> -->
+
+                <!-- <div class="col-md-6 range-wrap">
+                    <label for="dp" class="form-label">DP</label>
+                    <input type="range" min="100000" max="1000000" class="form-range range" oninput="bubble.value=value"/>
+                    <output id="bubble" class="bubble">50</output>
+                </div> -->
+
+                <div class="col-md-6 range-wrap">
+                  <label for="dp" class="form-label">DP</label>
+                  <input
+                    type="range"
+                    min="100000"
+                    max="1000000"
+                    class="form-range range"
+                    step="50000"
+                    oninput="updateBubble(this)"
+                  />
+                  <output id="bubble" class="bubble">Rp 100,000</output>
+                </div>
+
+                <!-- <div class="double-slider-box">
+                  <h3 class="range-title">DP / Angsuran</h3>
+                </div> -->
+                <div class="col-6">
+                  <button class="btn btn-danger" type="submit">Submit</button>
+                  <button class="btn btn-success" type="submit">
+                    Ajukan Sekarang
+                  </button>
+                </div>
+                <div class="col-6">
+                  <h3 class="text-hasil text-end">Rp. 1.000.000/Bln</h3>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- simulasi kredit end -->
+
+    <!-- syarat kredit start -->
+    <section class="faq-section section-big-py-space b-g-light">
+      <div class="title8">
+        <h2>Persyaratan Kredit</h2>
       </div>
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://scontent.fkno6-1.fna.fbcdn.net/v/t39.30808-6/304953735_792795585322361_795719861364676999_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=52f669&_nc_ohc=Y3X6AC7VNmcAX95hQjA&_nc_ht=scontent.fkno6-1.fna&oh=00_AfC4gD0Vt0arwwDvTfwY8A_co4bdzZ3RV1q4USQkL3V9sA&oe=65096265"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
-              <div class="card-body">
-                <div class="row">
-                  <div class="col">
-                    <h5 class="card-title">Dealer HONDA CMM Cibitung</h5>
-                  </div>
-                  <div class="col-2">
-                    <a
-                      href="https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=-8.65861,%20115.210666&travelMode=motorcycle"
-                    >
-                      <i
-                        class="fa fa-location-arrow fs-5"
-                        aria-hidden="true"
-                      ></i>
-                    </a>
+        <div class="row">
+          <div class="col-12">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingone">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseone"
+                    aria-expanded="false"
+                  >
+                    Kredit Perorangan
+                  </button>
+                </h2>
+                <div
+                  id="collapseone"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingone"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul class="fs-6">
+                      <li style="display: list-item">
+                        Fotocopy KTP pemohon &amp; suami / istri / penjamin
+                      </li>
+                      <li style="display: list-item">
+                        Fotocopy kartu keluarga (bisa digantikan dengan surat
+                        nikah atau akte kelahiran)
+                      </li>
+                      <li style="display: list-item">
+                        Data lain (hanya jika diperlukan)
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <p class="card-text">
-                  Jl. Raya Teuku Umar No 9, Cibuntu. Cibitung, Bekasi,
-                  Indonesia, West Java
-                </p>
-                <p class="card-text mt-2">
-                  <a href="tel:0361487130">Telp: 0361487130</a>
-                </p>
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://scontent.fkno6-1.fna.fbcdn.net/v/t39.30808-6/304953735_792795585322361_795719861364676999_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=52f669&_nc_ohc=Y3X6AC7VNmcAX95hQjA&_nc_ht=scontent.fkno6-1.fna&oh=00_AfC4gD0Vt0arwwDvTfwY8A_co4bdzZ3RV1q4USQkL3V9sA&oe=65096265"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
-              <div class="card-body">
-                <div class="row">
-                  <div class="col">
-                    <h5 class="card-title">Dealer HONDA CMM Cibitung</h5>
-                  </div>
-                  <div class="col-2">
-                    <a
-                      href="https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=-8.65861,%20115.210666&travelMode=motorcycle"
-                    >
-                      <i
-                        class="fa fa-location-arrow fs-5"
-                        aria-hidden="true"
-                      ></i>
-                    </a>
-                  </div>
-                </div>
-                <p class="card-text">
-                  Jl. Raya Teuku Umar No 9, Cibuntu. Cibitung, Bekasi,
-                  Indonesia, West Java
-                </p>
-                <p class="card-text mt-2">
-                  <a href="tel:0361487130">Telp: 0361487130</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://scontent.fkno6-1.fna.fbcdn.net/v/t39.30808-6/304953735_792795585322361_795719861364676999_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=52f669&_nc_ohc=Y3X6AC7VNmcAX95hQjA&_nc_ht=scontent.fkno6-1.fna&oh=00_AfC4gD0Vt0arwwDvTfwY8A_co4bdzZ3RV1q4USQkL3V9sA&oe=65096265"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
-              <div class="card-body">
-                <div class="row">
-                  <div class="col">
-                    <h5 class="card-title">Dealer HONDA CMM Cibitung</h5>
-                  </div>
-                  <div class="col-2">
-                    <a
-                      href="https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=-8.65861,%20115.210666&travelMode=motorcycle"
-                    >
-                      <i
-                        class="fa fa-location-arrow fs-5"
-                        aria-hidden="true"
-                      ></i>
-                    </a>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingtwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsetwo"
+                    aria-expanded="false"
+                  >
+                    Kredit Perusahaan
+                  </button>
+                </h2>
+                <div
+                  id="collapsetwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingtwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul class="fs-6">
+                      <li style="display: list-item">
+                        Fotocopy akte pendirian &amp; perubahannya
+                      </li>
+                      <li style="display: list-item">
+                        Fotocopy pengesahan kehakiman
+                      </li>
+                      <li style="display: list-item">
+                        Fotocopy SIUP, NPWP, SITU / Domisili, TDP
+                      </li>
+                      <li style="display: list-item">
+                        Fotocopy Rek. Koran 3 bulan terakhir
+                      </li>
+                      <li style="display: list-item">
+                        Fotocopy KTP direksi &amp; komisaris
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <p class="card-text">
-                  Jl. Raya Teuku Umar No 9, Cibuntu. Cibitung, Bekasi,
-                  Indonesia, West Java
-                </p>
-                <p class="card-text mt-2">
-                  <a href="tel:0361487130">Telp: 0361487130</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://scontent.fkno6-1.fna.fbcdn.net/v/t39.30808-6/304953735_792795585322361_795719861364676999_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=52f669&_nc_ohc=Y3X6AC7VNmcAX95hQjA&_nc_ht=scontent.fkno6-1.fna&oh=00_AfC4gD0Vt0arwwDvTfwY8A_co4bdzZ3RV1q4USQkL3V9sA&oe=65096265"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
-              <div class="card-body">
-                <div class="row">
-                  <div class="col">
-                    <h5 class="card-title">Dealer HONDA CMM Cibitung</h5>
-                  </div>
-                  <div class="col-2">
-                    <a
-                      href="https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=-8.65861,%20115.210666&travelMode=motorcycle"
-                    >
-                      <i
-                        class="fa fa-location-arrow fs-5"
-                        aria-hidden="true"
-                      ></i>
-                    </a>
-                  </div>
-                </div>
-                <p class="card-text">
-                  Jl. Raya Teuku Umar No 9, Cibuntu. Cibitung, Bekasi,
-                  Indonesia, West Java
-                </p>
-                <p class="card-text mt-2">
-                  <a href="tel:0361487130">Telp: 0361487130</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://scontent.fkno6-1.fna.fbcdn.net/v/t39.30808-6/304953735_792795585322361_795719861364676999_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=52f669&_nc_ohc=Y3X6AC7VNmcAX95hQjA&_nc_ht=scontent.fkno6-1.fna&oh=00_AfC4gD0Vt0arwwDvTfwY8A_co4bdzZ3RV1q4USQkL3V9sA&oe=65096265"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
-              <div class="card-body">
-                <div class="row">
-                  <div class="col">
-                    <h5 class="card-title">Dealer HONDA CMM Cibitung</h5>
-                  </div>
-                  <div class="col-2">
-                    <a
-                      href="https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=-8.65861,%20115.210666&travelMode=motorcycle"
-                    >
-                      <i
-                        class="fa fa-location-arrow fs-5"
-                        aria-hidden="true"
-                      ></i>
-                    </a>
-                  </div>
-                </div>
-                <p class="card-text">
-                  Jl. Raya Teuku Umar No 9, Cibuntu. Cibitung, Bekasi,
-                  Indonesia, West Java
-                </p>
-                <p class="card-text mt-2">
-                  <a href="tel:0361487130">Telp: 0361487130</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://scontent.fkno6-1.fna.fbcdn.net/v/t39.30808-6/304953735_792795585322361_795719861364676999_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=52f669&_nc_ohc=Y3X6AC7VNmcAX95hQjA&_nc_ht=scontent.fkno6-1.fna&oh=00_AfC4gD0Vt0arwwDvTfwY8A_co4bdzZ3RV1q4USQkL3V9sA&oe=65096265"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
-              <div class="card-body">
-                <div class="row">
-                  <div class="col">
-                    <h5 class="card-title">Dealer HONDA CMM Cibitung</h5>
-                  </div>
-                  <div class="col-2">
-                    <a
-                      href="https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=-8.65861,%20115.210666&travelMode=motorcycle"
-                    >
-                      <i
-                        class="fa fa-location-arrow fs-5"
-                        aria-hidden="true"
-                      ></i>
-                    </a>
-                  </div>
-                </div>
-                <p class="card-text">
-                  Jl. Raya Teuku Umar No 9, Cibuntu. Cibitung, Bekasi,
-                  Indonesia, West Java
-                </p>
-                <p class="card-text mt-2">
-                  <a href="tel:0361487130">Telp: 0361487130</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://scontent.fkno6-1.fna.fbcdn.net/v/t39.30808-6/304953735_792795585322361_795719861364676999_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=52f669&_nc_ohc=Y3X6AC7VNmcAX95hQjA&_nc_ht=scontent.fkno6-1.fna&oh=00_AfC4gD0Vt0arwwDvTfwY8A_co4bdzZ3RV1q4USQkL3V9sA&oe=65096265"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
-              <div class="card-body">
-                <div class="row">
-                  <div class="col">
-                    <h5 class="card-title">Dealer HONDA CMM Cibitung</h5>
-                  </div>
-                  <div class="col-2">
-                    <a
-                      href="https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=-8.65861,%20115.210666&travelMode=motorcycle"
-                    >
-                      <i
-                        class="fa fa-location-arrow fs-5"
-                        aria-hidden="true"
-                      ></i>
-                    </a>
-                  </div>
-                </div>
-                <p class="card-text">
-                  Jl. Raya Teuku Umar No 9, Cibuntu. Cibitung, Bekasi,
-                  Indonesia, West Java
-                </p>
-                <p class="card-text mt-2">
-                  <a href="tel:0361487130">Telp: 0361487130</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://scontent.fkno6-1.fna.fbcdn.net/v/t39.30808-6/304953735_792795585322361_795719861364676999_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=52f669&_nc_ohc=Y3X6AC7VNmcAX95hQjA&_nc_ht=scontent.fkno6-1.fna&oh=00_AfC4gD0Vt0arwwDvTfwY8A_co4bdzZ3RV1q4USQkL3V9sA&oe=65096265"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
-              <div class="card-body">
-                <div class="row">
-                  <div class="col">
-                    <h5 class="card-title">Dealer HONDA CMM Cibitung</h5>
-                  </div>
-                  <div class="col-2">
-                    <a
-                      href="https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=-8.65861,%20115.210666&travelMode=motorcycle"
-                    >
-                      <i
-                        class="fa fa-location-arrow fs-5"
-                        aria-hidden="true"
-                      ></i>
-                    </a>
-                  </div>
-                </div>
-                <p class="card-text">
-                  Jl. Raya Teuku Umar No 9, Cibuntu. Cibitung, Bekasi,
-                  Indonesia, West Java
-                </p>
-                <p class="card-text mt-2">
-                  <a href="tel:0361487130">Telp: 0361487130</a>
-                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- syarat kredit end -->
+
+    <!-- media tab start -->
+    <section class="section-pb-space mt-4">
+      <div class="title8">
+        <h2>Motor Rekomendasi</h2>
+      </div>
+      <div class="custom-container product">
+        <div class="row">
+          <div class="col pr-0">
+            <div class="theme-tab product">
+              <div class="tab-content-cls">
+                <!-- content tab 1 best diskon -->
+                <div id="tab-1" class="tab-content active default">
+                  <div class="product-slide-5 product-m no-arrow">
+                    <!-- custom card produk box for loop -->
+                    <div>
+                      <div class="product-box">
+                        <div class="product-imgbox">
+                          <div class="product-front">
+                            <img
+                              src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/ahm-gaul-sideview-deluxe-black-7-01022023-085330.png"
+                              class="img-fluid"
+                              alt="product"
+                            />
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-outline btn-cart tooltip-top add-cartnoty"
+                            data-tippy-content="pilih untuk simulasi"
+                          >
+                            pilih untuk simulasi
+                          </button>
+                        </div>
+                        <div class="product-detail product-detail2">
+                          <a href="product-page(left-sidebar).html">
+                            <h3>BeAT</h3>
+                          </a>
+                          <h3>Harga Mulai</h3>
+                          <h5>
+                            Rp. 23,050,000
+                            <span>Rp. 18,050,000</span>
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="product-box">
+                        <div class="product-imgbox">
+                          <div class="product-front">
+                            <img
+                              src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/ahm-gaul-sideview-deluxe-black-7-01022023-085330.png"
+                              class="img-fluid"
+                              alt="product"
+                            />
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-outline btn-cart tooltip-top add-cartnoty"
+                            data-tippy-content="pilih untuk simulasi"
+                          >
+                            pilih untuk simulasi
+                          </button>
+                        </div>
+                        <div class="product-detail product-detail2">
+                          <a href="product-page(left-sidebar).html">
+                            <h3>BeAT</h3>
+                          </a>
+                          <h3>Harga Mulai</h3>
+                          <h5>
+                            Rp. 23,050,000
+                            <span>Rp. 18,050,000</span>
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="product-box">
+                        <div class="product-imgbox">
+                          <div class="product-front">
+                            <img
+                              src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/ahm-gaul-sideview-deluxe-black-7-01022023-085330.png"
+                              class="img-fluid"
+                              alt="product"
+                            />
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-outline btn-cart tooltip-top add-cartnoty"
+                            data-tippy-content="pilih untuk simulasi"
+                          >
+                            pilih untuk simulasi
+                          </button>
+                        </div>
+                        <div class="product-detail product-detail2">
+                          <a href="product-page(left-sidebar).html">
+                            <h3>BeAT</h3>
+                          </a>
+                          <h3>Harga Mulai</h3>
+                          <h5>
+                            Rp. 23,050,000
+                            <span>Rp. 18,050,000</span>
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="product-box">
+                        <div class="product-imgbox">
+                          <div class="product-front">
+                            <img
+                              src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/ahm-gaul-sideview-deluxe-black-7-01022023-085330.png"
+                              class="img-fluid"
+                              alt="product"
+                            />
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-outline btn-cart tooltip-top add-cartnoty"
+                            data-tippy-content="pilih untuk simulasi"
+                          >
+                            pilih untuk simulasi
+                          </button>
+                        </div>
+                        <div class="product-detail product-detail2">
+                          <a href="product-page(left-sidebar).html">
+                            <h3>BeAT</h3>
+                          </a>
+                          <h3>Harga Mulai</h3>
+                          <h5>
+                            Rp. 23,050,000
+                            <span>Rp. 18,050,000</span>
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="product-box">
+                        <div class="product-imgbox">
+                          <div class="product-front">
+                            <img
+                              src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/ahm-gaul-sideview-deluxe-black-7-01022023-085330.png"
+                              class="img-fluid"
+                              alt="product"
+                            />
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-outline btn-cart tooltip-top add-cartnoty"
+                            data-tippy-content="pilih untuk simulasi"
+                          >
+                            pilih untuk simulasi
+                          </button>
+                        </div>
+                        <div class="product-detail product-detail2">
+                          <a href="product-page(left-sidebar).html">
+                            <h3>BeAT</h3>
+                          </a>
+                          <h3>Harga Mulai</h3>
+                          <h5>
+                            Rp. 23,050,000
+                            <span>Rp. 18,050,000</span>
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- custom card produk box for loop end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- media tab end -->
 
     <!-- footer start -->
     <footer>
@@ -723,8 +877,9 @@
                       </a>
                     </div>
                     <p>
-                      Portal andalan untuk temukan kendaraan impianmu dengan
-                      fitur canggih yang mudah digunakan!
+                      Contrary to popular belief, Lorem Ipsum is not simply
+                      random text. It has roots in a piece of classical Latin
+                      literature from 45 BC.
                     </p>
                     <ul class="paymant">
                       <li>
@@ -772,17 +927,20 @@
                 </div>
                 <div class="footer-box">
                   <div class="footer-title">
-                    <h5>Menu</h5>
+                    <h5>my account</h5>
                   </div>
                   <div class="footer-contant">
                     <ul>
-                      <li><a href="javascript:void(0)">Testimonial</a></li>
-                      <li><a href="javascript:void(0)">Dealer</a></li>
+                      <li><a href="javascript:void(0)">about us</a></li>
+                      <li><a href="javascript:void(0)">contact us</a></li>
                       <li>
-                        <a href="javascript:void(0)">Tentang Kami</a>
+                        <a href="javascript:void(0)">terms &amp; conditions</a>
                       </li>
                       <li>
-                        <a href="javascript:void(0)">Berita</a>
+                        <a href="javascript:void(0)">returns &amp; exchanges</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">shipping &amp; delivery</a>
                       </li>
                     </ul>
                   </div>
@@ -794,8 +952,9 @@
                   <div class="footer-contant">
                     <ul class="contact-list">
                       <li>
-                        <i class="fa fa-map-marker"></i>BliMoto<br />
-                        Jakarta -<span>3654123</span>
+                        <i class="fa fa-map-marker"></i>big deal store demo
+                        store <br />
+                        india-<span>3654123</span>
                       </li>
                       <li>
                         <i class="fa fa-phone"></i>call us:
@@ -819,7 +978,7 @@
           <div class="row">
             <div class="col-xl-6 col-md-8 col-sm-12">
               <div class="footer-left">
-                <p>2023 Copy Right by BliMoto Company</p>
+                <p>2019-20 Copy Right by Themeforest Powered by pixel strap</p>
               </div>
             </div>
             <div class="col-xl-6 col-md-4 col-sm-12">
@@ -857,7 +1016,6 @@
     </footer>
     <!-- footer end -->
 
-    <!-- add to  setting bar  end-->
     <!-- latest jquery-->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <!-- slick js-->
@@ -901,8 +1059,6 @@
 
     <!-- (Optional) Latest compiled and minified JavaScript translation files -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
-
-    <script src="assets/owl/owl.carousel.min.js"></script>
 
     <script>
       // gpt
