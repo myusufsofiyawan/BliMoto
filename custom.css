@@ -12,9 +12,12 @@
 .bg-basic {
   background-color: #dd0202 !important;
 }
+.text-basic {
+  color: #dd0202 !important;
+}
 
 .text-black {
-  color: black;
+  color: #444444;
 }
 
 .scroll-white {
@@ -221,6 +224,10 @@ section .simulasi-container .simulasi-wrapper .card {
   background-color: #dd0202 !important;
 }
 
+.slide-download-populer div .card.border-0 {
+  width: 14rem !important;
+}
+
 /* ======================== RESPONSIVE AREA START ===================== */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -250,6 +257,9 @@ section .simulasi-container .simulasi-wrapper .card {
   .text-view {
     font-size: 12px;
   }
+  .slide-download-populer div .card.border-0 {
+    width: 19rem !important;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -273,6 +283,9 @@ section .simulasi-container .simulasi-wrapper .card {
   }
   .owl-carousel .item div:last-child p:last-of-type {
     font-size: 10px;
+  }
+  .slide-download-populer div .card.border-0 {
+    width: 14rem !important;
   }
 }
 
@@ -298,6 +311,9 @@ section .simulasi-container .simulasi-wrapper .card {
   .desc-versus a {
     font-size: 10px;
     padding: 5px 10px !important;
+  }
+  .slide-download-populer div .card.border-0 {
+    width: 14rem !important;
   }
 }
 
@@ -342,6 +358,10 @@ section .simulasi-container .simulasi-wrapper .card {
   .owl-carousel .item div p:first-of-type {
     font-size: 12px;
   }
+
+  .slide-download-populer div .card.border-0 {
+    width: 13rem !important;
+  }
   /* .owl-carousel .item div:last-child p:last-of-type {
     font-size: 10px;
   } */
@@ -375,6 +395,10 @@ section .simulasi-container .simulasi-wrapper .card {
   .desc-versus a {
     padding: 5px 10px;
     font-size: 14px;
+  }
+
+  .slide-download-populer div .card.border-0 {
+    width: 13rem !important;
   }
 }
 /* ======================== RESPONSIVE AREA END ===================== */
