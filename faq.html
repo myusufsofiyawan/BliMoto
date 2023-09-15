@@ -18,7 +18,6 @@
       href="assets/images/favicon/favicon.webp"
       type="image/x-icon"
     />
-
     <!--Google font-->
     <link
       href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap"
@@ -44,21 +43,16 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
     <!--icon css-->
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/themify.css" />
-
     <!--Slick slider css-->
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
-
     <!--Animate css-->
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
-
     <!-- Bootstrap css -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
-
     <!-- Theme css -->
     <link
       rel="stylesheet"
@@ -79,18 +73,24 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"
     />
+
+    <!-- css custom agung -->
+    <link rel="stylesheet" type="text/css" href="custom.css" />
+
+    <link rel="stylesheet" href="assets/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/owl/owl.theme.default.min.css" />
   </head>
   <body class="bg-light">
     <!-- loader start -->
     <div class="loader-wrapper">
       <div>
-        <img src="assets/images/loader.gif" alt="loader" />
+        <img src="assets/images/tools/loader.gif" alt="loader" />
       </div>
     </div>
     <!-- loader end -->
 
     <!--header start-->
-    <header id="stickyheader" class="header-style2">
+    <header class="header-style2">
       <div class="header7">
         <div class="custom-container">
           <div class="row">
@@ -107,7 +107,7 @@
                     <a href="index.html">
                       <img
                         src="assets/images/logo/Logo-blimoto.webp"
-                        class="img-fluid w-100"
+                        class="img-fluid"
                         alt="logo"
                       />
                     </a>
@@ -115,10 +115,21 @@
                 </div>
                 <div class="header-search ajax-search the-basics">
                   <div class="input-group">
+                    <div class="input-group-text bg-basic">
+                      <select>
+                        <option>all category</option>
+                        <option>hand tools</option>
+                        <option>kitchen</option>
+                        <option>baby products</option>
+                        <option>Gardening Tools</option>
+                        <option>Fireplace tools</option>
+                        <option>Gutter cleaning</option>
+                      </select>
+                    </div>
                     <input
                       type="search"
                       class="form-control typeahead"
-                      placeholder="Cari Motor"
+                      placeholder="Search a Product"
                     />
                     <div class="input-group-text">
                       <i class="fa fa-search"></i>
@@ -128,7 +139,9 @@
                 <div class="categroy-contain">
                   <ul id="main-menu-header" class="sm pixelstrap sm-horizontal">
                     <li>
-                      <a class="dark-menu-item">Lokasi</a>
+                      <a class="dark-menu-item"
+                        ><i class="fa fa-map-marker"></i> Lokasi</a
+                      >
                       <ul>
                         <li><a href="index.html">Jakarta Selatan</a></li>
                         <li><a href="layout-2.html">Depok</a></li>
@@ -192,8 +205,9 @@
           </div>
         </div>
       </div>
-      <div class="category-header7">
-        <div class="custom-container">
+
+      <div id="navbar-wrapper" class="category-header7 bg-white">
+        <div class="custom-container navbar2-child">
           <div class="row">
             <div class="col-12">
               <div class="category-contain">
@@ -213,7 +227,7 @@
                       <a href="index.html ">
                         <img
                           src="assets/images/logo/Logo-blimoto.webp"
-                          class="img-fluid w-100"
+                          class="img-fluid"
                           alt="logo"
                         />
                       </a>
@@ -237,26 +251,26 @@
                         </li>
                         <!--HOME-->
                         <li>
-                          <a class="dark-menu-item" href="javascript:void(0)"
+                          <a
+                            class="dark-menu-item text-dark"
+                            href="javascript:void(0)"
                             >Home</a
                           >
                         </li>
                         <!--HOME-END-->
                         <!--SHOP-->
                         <li>
-                          <a class="dark-menu-item" href="javascript:void(0)"
+                          <a
+                            class="dark-menu-item text-dark"
+                            href="javascript:void(0)"
                             >Motor</a
                           >
                           <ul>
                             <li>
-                              <a href="category-page(left-sidebar).html"
-                                >Motor Terbaru</a
-                              >
+                              <a href="motor-terbaru.html">Motor Terbaru</a>
                             </li>
                             <li>
-                              <a href="category-page(right-sidebar).html"
-                                >Motor Termurah</a
-                              >
+                              <a href="motor-termurah.html">Motor Termurah</a>
                             </li>
                             <li>
                               <a href="bandingkan-motor.html"
@@ -264,19 +278,19 @@
                               >
                             </li>
                             <li>
-                              <a href="category-page(sidebar-popup).html"
-                                >Brosur Motor</a
-                              >
+                              <a href="brosur.html">Brosur Motor</a>
                             </li>
                             <li>
-                              <a href="category-page(metro).html">Dealer</a>
+                              <a href="dealer.html">Dealer</a>
                             </li>
                           </ul>
                         </li>
                         <!--SHOP-END-->
                         <!--product-meu start-->
                         <li class="mega">
-                          <a class="dark-menu-item" href="javascript:void(0)"
+                          <a
+                            class="dark-menu-item text-dark"
+                            href="javascript:void(0)"
                             >Check Slip BI
                           </a>
                         </li>
@@ -284,7 +298,7 @@
 
                         <!--mega-meu start-->
                         <li class="mega">
-                          <a class="dark-menu-item" href="javascript:void(0)"
+                          <a class="dark-menu-item text-dark" href="promo.html"
                             >Promosi</a
                           >
                         </li>
@@ -292,7 +306,9 @@
 
                         <!--pages meu start-->
                         <li>
-                          <a class="dark-menu-item" href="javascript:void(0)"
+                          <a
+                            class="dark-menu-item text-dark"
+                            href="javascript:void(0)"
                             >Kredit</a
                           >
                           <ul>
@@ -310,7 +326,9 @@
 
                         <!--blog-meu start-->
                         <li>
-                          <a class="dark-menu-item" href="blog.html">Berita</a>
+                          <a class="dark-menu-item text-dark" href="blog.html"
+                            >Berita</a
+                          >
                         </li>
                         <!--blog-meu end-->
                       </ul>
@@ -327,7 +345,7 @@
           </div>
         </div>
         <div class="searchbar-input ajax-search the-basics">
-          <div class="input-group">
+          <div class="input-group bg-basic">
             <span class="input-group-text">
               <svg
                 version="1.1"
@@ -369,6 +387,8 @@
     </header>
     <!--header end-->
 
+    <!-- new hook slider end -->
+
     <!-- breadcrumb start -->
     <div class="breadcrumb-main">
       <div class="container">
@@ -376,11 +396,11 @@
           <div class="col">
             <div class="breadcrumb-contain">
               <div>
-                <h2>berita</h2>
+                <h2>faq</h2>
                 <ul>
-                  <li><a href="javascript:void(0)">home</a></li>
+                  <li><a href="index.html">home</a></li>
                   <li><i class="fa fa-angle-double-right"></i></li>
-                  <li><a href="javascript:void(0)">berita</a></li>
+                  <li><a href="javascript:void(0)">faq</a></li>
                 </ul>
               </div>
             </div>
@@ -388,311 +408,223 @@
         </div>
       </div>
     </div>
-    <!-- breadcrumb End -->
+    <!-- breadcrumb end -->
 
-    <!-- blog section start -->
-    <section class="section-big-py-space blog-page ratio2_3">
-      <div class="custom-container">
+    <!-- faq start -->
+
+    <section class="faq-section section-big-py-space b-g-dark my-5">
+      <div class="title8">
+        <h4>Hal Yang sering Ditanyakan</h4>
+      </div>
+      <div class="container">
         <div class="row">
-          <div class="col-xl-9 col-lg-8 col-md-7">
-            <div class="row blog-media">
-              <div class="col-xl-6">
-                <div class="blog-left">
-                  <a href="blog-details.html"
-                    ><img
-                      src="https://imgcdnblog.carbay.com/wp-content/uploads/2023/09/13085559/CHERY-Omoda-5-500x281.jpg"
-                      class="img-fluid w-100"
-                      alt=""
-                  /></a>
-                  <div class="date-label">26 nov 2019</div>
-                </div>
-              </div>
-              <div class="col-xl-6">
-                <div class="blog-right">
-                  <div>
-                    <a href="blog-details.html"
-                      ><h4>
-                        you how all this mistaken idea of denouncing pleasure
-                        and praising pain was born.
-                      </h4>
-                    </a>
+          <div class="col-12">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingone">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseone"
+                    aria-expanded="false"
+                  >
+                    How can I downgrade to an earlier version of Dummy Content?
+                  </button>
+                </h2>
+                <div
+                  id="collapseone"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingone"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
                     <p>
-                      Consequences that are extremely painful. Nor again is
-                      there anyone who loves or pursues or desires to obtain
-                      pain of itself, because it is pain, but because
-                      occasionally circumstances occur in which toil and pain
-                      can procure him some great pleasure.
+                      it look like readable English. Many desktop publishing
+                      packages and web page editors now use Lorem Ipsum as their
+                      default model text, and a search for 'lorem ipsum' will
+                      uncover many web sites still in their infancy. Various
+                      versions have evolved over the years,All the Lorem Ipsum
+                      generators on the Internet tend to repeat predefined
+                      chunks as necessary, making this the first true generator
+                      on the Internet. It uses a dictionary of over 200 Latin
+                      words, combined with a handful of model sentence
+                      structures
                     </p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row blog-media">
-              <div class="col-xl-6">
-                <div class="blog-left">
-                  <a href="blog-details.html"
-                    ><img
-                      src="https://asset.kompas.com/crops/VNShGIZ1UidiaF3bKd9ynRTBm0k=/224x173:1305x894/1200x800/data/photo/2023/09/13/6501722b9ca43.jpeg"
-                      class="img-fluid w-100"
-                      alt=""
-                  /></a>
-                  <div class="date-label">26 nov 2019</div>
-                </div>
-              </div>
-              <div class="col-xl-6">
-                <div class="blog-right">
-                  <div>
-                    <a href="blog-details.html"
-                      ><h4>
-                        Hyundai IONIQ 5 2023 Versi Bluelink, Makin Pintar?
-                      </h4>
-                    </a>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingtwo">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsetwo"
+                  >
+                    How can I upgrade from Shopify 2.5 to shopify 3?
+                  </button>
+                </h2>
+                <div
+                  id="collapsetwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingtwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
                     <p>
-                      IONIQ 5 dengan Hyundai Bluelink juga dilengkapi fitur
-                      navigasi yang lebih lengkap. Salah satunya, Search Nearby
-                      untuk mengetahui lebih banyak point of interest (POI),
-                      seperti restoran atau pusat perbelanjaan. Informasi
-                      petunjuk arah ke lokasi POI juga terintegrasi sehingga
-                      bisa dikirimkan dari aplikasi ke kendaraan.
+                      it look like readable English. Many desktop publishing
+                      packages and web page editors now use Lorem Ipsum as their
+                      default model text, and a search for 'lorem ipsum' will
+                      uncover many web sites still in their infancy. Various
+                      versions have evolved over the years,All the Lorem Ipsum
+                      generators on the Internet tend to repeat predefined
+                      chunks as necessary, making this the first true generator
+                      on the Internet. It uses a dictionary of over 200 Latin
+                      words, combined with a handful of model sentence
+                      structures
                     </p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row blog-media">
-              <div class="col-xl-6">
-                <div class="blog-left">
-                  <a href="javascript:void(0)"
-                    ><img
-                      src="https://imgcdnblog.carbay.com/wp-content/uploads/2022/02/02143913/Vario-160.jpeg"
-                      class="img-fluid w-100"
-                      alt=""
-                  /></a>
-                  <div class="date-label">26 nov 2019</div>
-                </div>
-              </div>
-              <div class="col-xl-6">
-                <div class="blog-right">
-                  <div>
-                    <a href="javascript:void(0)"
-                      ><h4>Simak Deret Pembaruan All New Honda Vario 160</h4>
-                    </a>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingthree">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsethree"
+                  >
+                    How can I downgrade to an earlier version of Dummy Content?
+                  </button>
+                </h2>
+                <div
+                  id="collapsethree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingthree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
                     <p>
-                      Mesin All New Honda Vario 160 mendapat mesin generasi
-                      terbaru. Sekarang dirinya menggendong enjin 160 cc yang
-                      dijejali empat klep, SOHC, berpendingin cairan serta
-                      teknologi enhanced Smart Power Plus (eSP+). Ia mampu
-                      menghasilkan tenaga maksimal hingga 15,3 Hp pada 8.500 rpm
-                      dengan torsi puncak 13,8 Nm di kitiran 7.000 rpm. Ukuran
-                      bore x stroke kini 60 x 55,5 mm, sebelumnya 57,3 x 57,9
-                      mm. Rasio kompresi juga meningkat, model lama 10,6:1
-                      sekarang 12:1. Bila dibanding model lama, kenaikan tenaga
-                      cukup signifikan. Sebelumnya 13 Hp/8.500 dan torsi hanya
-                      meningkat sedikit, yakni dari 13,4 Nm/5.000 rpm. Sementara
-                      PCX 160 mampu memuntahkan power 16 Hp di 8.500 rpm dan
-                      torsi 15 Nm di 6.500 rpm.
+                      it look like readable English. Many desktop publishing
+                      packages and web page editors now use Lorem Ipsum as their
+                      default model text, and a search for 'lorem ipsum' will
+                      uncover many web sites still in their infancy. Various
+                      versions have evolved over the years,All the Lorem Ipsum
+                      generators on the Internet tend to repeat predefined
+                      chunks as necessary, making this the first true generator
+                      on the Internet. It uses a dictionary of over 200 Latin
+                      words, combined with a handful of model sentence
+                      structures
                     </p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row blog-media">
-              <div class="col-xl-6">
-                <div class="blog-left">
-                  <a href="javascript:void(0)"
-                    ><img
-                      src="https://imgcdnblog.carbay.com/wp-content/uploads/2021/11/22113322/Honda-CB150X_02-650x433.jpg"
-                      class="img-fluid w-100"
-                      alt=""
-                  /></a>
-                  <div class="date-label">26 nov 2019</div>
-                </div>
-              </div>
-              <div class="col-xl-6">
-                <div class="blog-right">
-                  <div>
-                    <a href="javascript:void(0)"
-                      ><h4>
-                        Murah Meriah, Harga Resmi Honda CB150X Dirilis, Rp 32-33
-                        Jutaan Saja!
-                      </h4>
-                    </a>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingfour">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsefour"
+                  >
+                    Under what license are Regular Labs extensions released?
+                  </button>
+                </h2>
+                <div
+                  id="collapsefour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingfour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
                     <p>
-                      Setelah sebelumnya diperkenalkan sosoknya ke masyarakat
-                      lewat ajang Gaikindo Indonesia International Auto Show
-                      (GIIAS) 2021, harga Honda CB150X akhirnya dirilis. Tipe
-                      terendah dihargai Rp 32,95 juta sementara tipe Special
-                      Edition (SE) Rp 33,45 juta. Harganya jadi sangat menarik,
-                      soalnya dengan nilai kisaran Rp 33 jutaan ini masih jauh
-                      dari angka tertinggi yang sempat diisukan, yakni mencapai
-                      Rp 35 jutaan. Nampaknya PT Astra Honda Motor (AHM) selaku
-                      pemegang merek ingin memberikan value terbaik pada
-                      konsumennya.
+                      it look like readable English. Many desktop publishing
+                      packages and web page editors now use Lorem Ipsum as their
+                      default model text, and a search for 'lorem ipsum' will
+                      uncover many web sites still in their infancy. Various
+                      versions have evolved over the years,All the Lorem Ipsum
+                      generators on the Internet tend to repeat predefined
+                      chunks as necessary, making this the first true generator
+                      on the Internet. It uses a dictionary of over 200 Latin
+                      words, combined with a handful of model sentence
+                      structures
                     </p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row blog-media">
-              <div class="col-xl-6">
-                <div class="blog-left">
-                  <a href="javascript:void(0)"
-                    ><img
-                      src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,pr-true/uploads/article/thumbnail/giias-2023-01-21082023-082755.jpeg"
-                      class="img-fluid w-100"
-                      alt=""
-                  /></a>
-                  <div class="date-label">26 nov 2019</div>
-                </div>
-              </div>
-              <div class="col-xl-6">
-                <div class="blog-right">
-                  <div>
-                    <a href="javascript:void(0)"
-                      ><h4>Inilah Motor Honda Terlaris di GIIAS 2023</h4>
-                    </a>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingfive">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsefive"
+                  >
+                    What is the Regular Labs Library?
+                  </button>
+                </h2>
+                <div
+                  id="collapsefive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingfive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
                     <p>
-                      Jakarta – PT Astra Honda Motor (AHM) berhasil mencatatkan
-                      penjualan sebanyak 1.251 unit sepeda motor pada gelaran
-                      Gaikindo Indonesia International Auto Show (GIIAS) 2023
-                      yang diselenggarakan selama 10-20 Agustus 2023. Honda
-                      PCX160 berhasil mendominasi penjualan sepeda motor Honda,
-                      skutik besar 160cc yang berdesain mewah dan dinamis ini
-                      terjual sebanyak 487 unit untuk varian ABS dan juga CBS.
-                      Deretan sepeda motor skutik Honda berhasil menjadi pusat
-                      perhatian dan menggaet minat 1.129 pengunjung GIIAS,
-                      mencerminkan besarnya minat dan antusiasme pengunjung
-                      terhadap jajaran sepeda motor Honda. Selain Honda PCX160,
-                      skutik compact Honda BeAT series juga berhasil mendapat
-                      kepercayaan untuk menemani berkendara 217 konsumen,
-                      disusul dengan skutik fashionable Honda Scoopy series yang
-                      dipinang oleh 252 konsumen pada gelaran yang dillaksanakan
-                      di Indonesia Convention Exhibition (ICE), BSD City,
-                      Tangerang.
+                      it look like readable English. Many desktop publishing
+                      packages and web page editors now use Lorem Ipsum as their
+                      default model text, and a search for 'lorem ipsum' will
+                      uncover many web sites still in their infancy. Various
+                      versions have evolved over the years,All the Lorem Ipsum
+                      generators on the Internet tend to repeat predefined
+                      chunks as necessary, making this the first true generator
+                      on the Internet. It uses a dictionary of over 200 Latin
+                      words, combined with a handful of model sentence
+                      structures
                     </p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-5">
-            <div class="blog-sidebar">
-              <div class="theme-card">
-                <h4>Recent Blog</h4>
-                <ul class="recent-blog">
-                  <li>
-                    <div class="media">
-                      <img
-                        class="img-fluid"
-                        src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,pr-true/uploads/article/thumbnail/cbr-trackday-01-2-04092023-060111.jpg"
-                        alt="Generic placeholder image"
-                      />
-                      <div class="media-body align-self-center">
-                        <h6>Performa Tinggi Motor Juara CBR250RR</h6>
-                        <h6>25 Dec 2018</h6>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <img
-                        class="img-fluid"
-                        src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,pr-true/uploads/article/thumbnail/ahm-mxgp-swedia-02-1-14082023-020711.jpg"
-                        alt="Generic placeholder image"
-                      />
-                      <div class="media-body align-self-center">
-                        <h6>
-                          Delvintor Kembali Dulang Poin di MXGP Seri Swedia
-                        </h6>
-                        <h6>25 Dec 2018</h6>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <img
-                        class="img-fluid"
-                        src="https://imgcdnblog.carbay.com/wp-content/uploads/2023/09/13085559/CHERY-Omoda-5-500x281.jpg"
-                        alt="Generic placeholder image"
-                      />
-                      <div class="media-body align-self-center">
-                        <h6>Ini Judul Berita</h6>
-                        <h6>25 Dec 2018</h6>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <img
-                        class="img-fluid"
-                        src="https://imgcdnblog.carbay.com/wp-content/uploads/2023/09/13085559/CHERY-Omoda-5-500x281.jpg"
-                        alt="Generic placeholder image"
-                      />
-                      <div class="media-body align-self-center">
-                        <h6>Ini Judul Berita</h6>
-                        <h6>25 Dec 2018</h6>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <img
-                        class="img-fluid"
-                        src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,pr-true/uploads/article/thumbnail/safety-riding-camp-2023-01-557x398-28072023-033628.jpeg"
-                        alt="Generic placeholder image"
-                      />
-                      <div class="media-body align-self-center">
-                        <h6>
-                          Tingkatkan Kompetensi, Puluhan Figur Keselamatan
-                          Berkendara Ikuti Kemah Safety Riding
-                        </h6>
-                        <h6>25 Dec 2018</h6>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <img
-                        class="img-fluid"
-                        src="https://imgcdnblog.carbay.com/wp-content/uploads/2023/09/13085559/CHERY-Omoda-5-500x281.jpg"
-                        alt="Generic placeholder image"
-                      />
-                      <div class="media-body align-self-center">
-                        <h6>Ini Judul Berita</h6>
-                        <h6>25 Dec 2018</h6>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingsix">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsesix"
+                  >
+                    Can I turn on/off some blocks on the page?
+                  </button>
+                </h2>
+                <div
+                  id="collapsesix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingsix"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      it look like readable English. Many desktop publishing
+                      packages and web page editors now use Lorem Ipsum as their
+                      default model text, and a search for 'lorem ipsum' will
+                      uncover many web sites still in their infancy. Various
+                      versions have evolved over the years,All the Lorem Ipsum
+                      generators on the Internet tend to repeat predefined
+                      chunks as necessary, making this the first true generator
+                      on the Internet. It uses a dictionary of over 200 Latin
+                      words, combined with a handful of model sentence
+                      structures
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- blog section ends -->
-
-    <!-- pagination start -->
-    <section class="section-big-py-space">
-      <div class="custom-container">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination justify-content-center">
-            <li class="page-item">
-              <a class="page-link" href="#">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item"><a class="page-link" href="#">6</a></li>
-            <li class="page-item"><a class="page-link" href="#">7</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <!-- pagination end -->
+    <!-- faq end -->
 
     <!-- footer start -->
     <footer>
@@ -716,9 +648,8 @@
                       </a>
                     </div>
                     <p>
-                      Contrary to popular belief, Lorem Ipsum is not simply
-                      random text. It has roots in a piece of classical Latin
-                      literature from 45 BC.
+                      Portal andalan untuk temukan kendaraan impianmu dengan
+                      fitur canggih yang mudah digunakan!
                     </p>
                     <ul class="paymant">
                       <li>
@@ -766,20 +697,17 @@
                 </div>
                 <div class="footer-box">
                   <div class="footer-title">
-                    <h5>my account</h5>
+                    <h5>Menu</h5>
                   </div>
                   <div class="footer-contant">
                     <ul>
-                      <li><a href="javascript:void(0)">about us</a></li>
-                      <li><a href="javascript:void(0)">contact us</a></li>
+                      <li><a href="javascript:void(0)">Testimonial</a></li>
+                      <li><a href="dealer.html">Dealer</a></li>
                       <li>
-                        <a href="javascript:void(0)">terms &amp; conditions</a>
+                        <a href="javascript:void(0)">Tentang Kami</a>
                       </li>
                       <li>
-                        <a href="javascript:void(0)">returns &amp; exchanges</a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)">shipping &amp; delivery</a>
+                        <a href="javascript:void(0)">Berita</a>
                       </li>
                     </ul>
                   </div>
@@ -791,9 +719,8 @@
                   <div class="footer-contant">
                     <ul class="contact-list">
                       <li>
-                        <i class="fa fa-map-marker"></i>big deal store demo
-                        store <br />
-                        india-<span>3654123</span>
+                        <i class="fa fa-map-marker"></i>BliMoto<br />
+                        Jakarta -<span>3654123</span>
                       </li>
                       <li>
                         <i class="fa fa-phone"></i>call us:
@@ -817,7 +744,7 @@
           <div class="row">
             <div class="col-xl-6 col-md-8 col-sm-12">
               <div class="footer-left">
-                <p>2019-20 Copy Right by Themeforest Powered by pixel strap</p>
+                <p>2023 Copy Right by BliMoto Company</p>
               </div>
             </div>
             <div class="col-xl-6 col-md-4 col-sm-12">
@@ -855,86 +782,19 @@
     </footer>
     <!-- footer end -->
 
-    <!--Newsletter modal popup start-->
-    <div
-      class="modal fade bd-example-modal-lg theme-modal"
-      id="exampleModal"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="news-latter">
-              <div class="modal-bg">
-                <div class="newslatter-main">
-                  <div class="offer-content">
-                    <div>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                      <h2>newsletter</h2>
-                      <p>
-                        Subscribe to our website mailling list <br />
-                        and get a Offer, Just for you!
-                      </p>
-                      <form
-                        action="https://pixelstrap.us19.list-manage.com/subscribe/post?u=5a128856334b598b395f1fc9b&amp;id=082f74cbda"
-                        class="auth-form needs-validation"
-                        method="post"
-                        id="mc-embedded-subscribe-form"
-                        name="mc-embedded-subscribe-form"
-                        target="_blank"
-                      >
-                        <div class="form-group mx-sm-3">
-                          <input
-                            type="email"
-                            class="form-control"
-                            name="EMAIL"
-                            id="mce-EMAIL"
-                            placeholder="Enter your email"
-                            required="required"
-                          />
-                          <button
-                            type="submit"
-                            class="btn btn-theme btn-normal btn-sm"
-                            id="mc-submit"
-                          >
-                            subscribe
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="imd-wrraper">
-                    <img
-                      src="assets/images/layout-2/product/3.jpg"
-                      alt="newsletterimg"
-                      class="img-fluid bg-img"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Newsletter Modal popup end-->
-
+    <!-- add to  setting bar  end-->
     <!-- latest jquery-->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
-
     <!-- slick js-->
     <script src="assets/js/slick.js"></script>
 
     <!-- tool tip js -->
+
     <script src="assets/js/tippy-popper.min.js"></script>
     <script src="assets/js/tippy-bundle.iife.min.js"></script>
+
+    <!-- popper js-->
+    <script src="assets/js/popper.min.js"></script>
 
     <!-- menu js-->
     <script src="assets/js/menu.js"></script>
@@ -944,20 +804,55 @@
     <script src="assets/js/typeahead.jquery.min.js"></script>
     <script src="assets/js/ajax-custom.js"></script>
 
-    <!-- popper js-->
-    <script src="assets/js/popper.min.js"></script>
-
     <!-- father icon -->
     <script src="assets/js/feather.min.js"></script>
     <script src="assets/js/feather-icon.js"></script>
 
     <!-- Bootstrap js-->
     <script src="assets/js/bootstrap.js"></script>
-
-    <!-- Timer js-->
-    <script src="assets/js/menu.js"></script>
-
+    <!-- Bootstrap js-->
+    <script src="assets/js/bootstrap-notify.min.js"></script>
     <!-- Theme js-->
+    <script src="assets/js/slider-animat-three.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/modal.js"></script>
+
+    <!-- select 2 js  -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="assets/js/custom/custom.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
+
+    <script src="assets/owl/owl.carousel.min.js"></script>
+
+    <script>
+      // gpt
+      function updateBubble(input) {
+        const val = input.value;
+        const bubble = document.getElementById("bubble");
+
+        // Konversi nilai ke format mata uang Rupiah
+        const formattedValue = formatToRupiah(val);
+        bubble.textContent = formattedValue;
+
+        // Sorta magic numbers based on size of the native UI thumb
+        const min = input.min ? parseFloat(input.min) : 0;
+        const max = input.max ? parseFloat(input.max) : 100;
+        const newVal = ((val - min) * 100) / (max - min);
+        bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+      }
+
+      function formatToRupiah(value) {
+        // Gunakan metode Intl.NumberFormat untuk mengonversi nilai menjadi format mata uang Rupiah
+        return new Intl.NumberFormat("id-ID", {
+          style: "currency",
+          currency: "IDR",
+        }).format(value);
+      }
+    </script>
   </body>
 </html>
