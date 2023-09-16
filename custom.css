@@ -20,6 +20,10 @@
   color: #444444;
 }
 
+.bg-doff {
+  background-color: #292929 !important;
+}
+
 .scroll-white {
   background-color: #fff;
 }
